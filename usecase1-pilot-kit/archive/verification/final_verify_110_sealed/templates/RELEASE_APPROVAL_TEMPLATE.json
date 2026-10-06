@@ -1,0 +1,11 @@
+[
+  {
+    "approval_id": "replace-with-client-controlled-id",
+    "role": "domain_owner",
+    "reviewer": "replace-with-named-reviewer",
+    "approved_at_utc": "2026-08-13T00:00:00Z",
+    "scope_sha256": "copy-from-operational_release.json",
+    "target": "QMS_STAGING",
+    "decision": "APPROVE"
+  }
+]

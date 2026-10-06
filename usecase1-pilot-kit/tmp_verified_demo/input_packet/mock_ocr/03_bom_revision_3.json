@@ -1,0 +1,91 @@
+{
+  "adapter": "existing_ocr_fixture_v1",
+  "page_count": 1,
+  "text": "BILL OF MATERIALS\nBOM NUMBER: BOM-725-A\nPO NUMBER: PO-1001\nPART NUMBER: PN-7O725\nMATERIAL: UNS N07725\nSPECIFICATION: SPEC-725\nREVISION: 3",
+  "fields": [
+    {
+      "name": "bom_number",
+      "value": "BOM-725-A",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "po_number",
+      "value": "PO-1001",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "part_number",
+      "value": "PN-7O725",
+      "unit": null,
+      "confidence": 0.74,
+      "page": 1,
+      "region": "parts_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "material_grade",
+      "value": "UNS N07725",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "parts_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "specification_number",
+      "value": "SPEC-725",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "parts_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "revision",
+      "value": 3,
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    }
+  ]
+}

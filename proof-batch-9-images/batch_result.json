@@ -1,0 +1,330 @@
+{
+  "batch_id": "whatsapp_engineering_sample_2026-08-12",
+  "input_count": 9,
+  "processing_mode": "local_only",
+  "document_summary": {
+    "business_use_case_lists": 2,
+    "technical_records": 7,
+    "technical_families": [
+      "material_certificate",
+      "chemical_analysis",
+      "hardness_report",
+      "dimensional_inspection",
+      "mechanical_properties"
+    ]
+  },
+  "documents": [
+    {
+      "id": "DOC-01",
+      "source": "C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg",
+      "type": "material_certificate_chemistry",
+      "material": {
+        "value": "INCONEL alloy 725",
+        "status": "RECOVERED",
+        "confidence": "high"
+      },
+      "description": "Vacuum induction melted-vacuum arc remelted; hot-finished round; solution annealed and age hardened; 1.0060 in x 132.0000 in; 45 pcs; 1758 lbs",
+      "specifications_raw": "SMC HA 91 REV 9 / HOWCO HG725 BAR (120 KSI) REV 6 per SMC comments / ASTM B 805-06 (2017) / API 6A CRA (N07725) (120K) First Edition Errata 1 Addendum 1 / NACE MR0175-ISO 15156-3 (2015) / SMC QCP 285 REV 3",
+      "analysis_percent": {
+        "C": 0.004,
+        "Mn": 0.07,
+        "Fe": 7.7,
+        "S": 0.001,
+        "Si": 0.04,
+        "Cu": 0.04,
+        "Ni": 58.1,
+        "Cr": 20.8,
+        "Al": 0.23,
+        "Ti": 1.54,
+        "Mg": 0.001,
+        "Co": 0.04,
+        "Mo": 8.05,
+        "Nb": 3.42,
+        "Ta": 0.0032,
+        "Ca": 0.0013,
+        "P": 0.001
+      },
+      "reported_combined_values": {
+        "Nb_plus_Ta": 3.42,
+        "Ni_plus_Co": 58.1
+      },
+      "stamp_date": "2019-08-15",
+      "evidence": {
+        "prepared_image": "proof_images/doc_01_material_certificate_r0_enhanced.png",
+        "regions": ["material description", "specifications", "analysis table", "approval stamp"]
+      }
+    },
+    {
+      "id": "DOC-02",
+      "source": "C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02.jpeg",
+      "type": "business_use_case_list",
+      "status": "STRUCTURED",
+      "items": [
+        "Medical predictive analytics: intervention six hours before a critical period",
+        "Day-ahead LMP forecasting",
+        "Spend-class classification",
+        "Polaris BoM data extraction",
+        "Intel data-extraction feasibility",
+        "AI Builder integration for data extraction",
+        "Metadata extraction and quality checking",
+        "Iron-ore silica percentage prediction and Ubiqwise edge ML",
+        "Halliburton journal classification",
+        "CoC extraction from PDFs",
+        "Huawei sentiment analysis",
+        "Optimal setpoint inference",
+        "Route optimization",
+        "BK Medical log analytics",
+        "Vehicle number-plate extraction for iBEMS",
+        "Predictive/prescriptive control analytics for a fertilizer plant",
+        "Chatbot",
+        "Complaint handling from FSE logs",
+        "Clinical evaluation process"
+      ],
+      "evidence": {
+        "prepared_image": "proof_images/doc_02_use_cases_b_r0_enhanced.png",
+        "raw_ocr": "proof_ocr/doc_02_use_cases_b_r0_enhanced.json"
+      }
+    },
+    {
+      "id": "DOC-03",
+      "source": "C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01 (1).jpeg",
+      "type": "business_use_case_list",
+      "status": "STRUCTURED",
+      "items": [
+        "Part rationalization",
+        "MediaKind catalog management",
+        "Part-rationalization analytics services",
+        "EM costing",
+        "Supplier assessment and recommendation",
+        "Drone NextGen cognitive application",
+        "Smart tagging and document comparison",
+        "MTR validation",
+        "Video credit extraction",
+        "2D engineering-drawing extraction",
+        "UTAS MRO PO processing",
+        "Document comparison for standard-document migration",
+        "Electricity-bill extraction",
+        "FSE log analysis",
+        "ExxonMobil geodata work",
+        "Nameplate extraction",
+        "Brakeplate extraction",
+        "KM 3.0 virtual agent",
+        "Amiens invoice extraction",
+        "Sentiment analysis for smart buildings",
+        "Component extraction pilot",
+        "Specification-document extraction"
+      ],
+      "evidence": {
+        "prepared_image": "proof_images/doc_03_use_cases_a_r0_enhanced.png",
+        "raw_ocr": "proof_ocr/doc_03_use_cases_a_r0_enhanced.json"
+      }
+    },
+    {
+      "id": "DOC-04",
+      "source": "C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg",
+      "type": "chemical_analysis",
+      "columns": ["C", "Mn", "S", "P", "Si", "Ni", "Cr", "Mo", "Cu", "Al", "Nb", "Ti", "V"],
+      "ladle_analysis": {
+        "C": 0.39,
+        "Mn": 0.8,
+        "S": 0.002,
+        "P": 0.009,
+        "Si": 0.24,
+        "Ni": 0.07,
+        "Cr": 0.92,
+        "Mo": 0.2,
+        "Cu": 0.17,
+        "Al": 0.02,
+        "Nb": 0.002,
+        "Ti": 0.001,
+        "V": 0.015,
+        "H_ppm": "<2.0"
+      },
+      "product_analysis": [
+        {"C": 0.38, "Mn": 0.81, "S": 0.001, "P": 0.01, "Si": 0.23, "Ni": 0.07, "Cr": 0.95, "Mo": 0.19, "Cu": 0.18, "Al": 0.023, "Nb": 0.006, "Ti": 0.002, "V": 0.017},
+        {"C": 0.39, "Mn": 0.8, "S": 0.002, "P": 0.01, "Si": 0.23, "Ni": 0.07, "Cr": 0.94, "Mo": 0.19, "Cu": 0.18, "Al": 0.022, "Nb": 0.004, "Ti": 0.002, "V": 0.016}
+      ],
+      "status": "STRUCTURED",
+      "evidence": {
+        "prepared_image": "proof_images/doc_04_chemical_analysis_r0_enhanced.png",
+        "region": "lower chemical-analysis table"
+      }
+    },
+    {
+      "id": "DOC-05",
+      "source": "C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.00.jpeg",
+      "type": "certified_materials_test_report_hardness",
+      "date": "2019-07-08",
+      "page": "3/8",
+      "method_labels": ["SG", "SUR", "HRC"],
+      "hardness_readings": [
+        [38.5, 38.4, 38.9, 38.6],
+        [37.9, 38.6, 38.4, 38.3],
+        [36.7, 37.2, 37.4, 37.1],
+        [38.6, 38.2, 38.6, 38.5],
+        [38.8, 38.4, 39.0, 38.7],
+        [39.5, 38.8, 39.6, 39.3],
+        [36.2, 37.1, 38.2, 37.2],
+        [38.4, 38.5, 38.3, 38.4],
+        [38.6, null, 39.2, 39.0],
+        [39.0, 39.4, 39.0, 39.2],
+        [39.3, 39.4, 39.8, 39.5],
+        [38.6, 40.0, 39.2, 39.3],
+        [38.6, 39.3, 39.8, 39.6],
+        [38.1, 39.8, 38.4, 38.8],
+        [39.8, 40.0, 39.1, 39.6],
+        [39.8, 39.3, 39.9, 39.7],
+        [40.3, 39.8, 39.0, 39.7],
+        [37.7, 39.0, 39.0, 38.6],
+        [38.7, 38.7, 38.2, 38.5],
+        [37.8, 38.6, 38.0, 38.2],
+        [38.1, 38.4, 38.0, 38.2],
+        [38.4, 39.0, 37.5, 38.0],
+        [37.9, 38.4, 37.8, 38.0],
+        [38.1, 38.6, 37.7, 37.9]
+      ],
+      "status": "STRUCTURED_WITH_ONE_UNRESOLVED_CELL",
+      "unresolved": [
+        {"row": 9, "column": 2, "reason": "value obscured in source; not guessed"}
+      ],
+      "evidence": {
+        "prepared_image": "proof_images/doc_05_material_test_report_r0_enhanced.png",
+        "region": "hardness table"
+      }
+    },
+    {
+      "id": "DOC-06",
+      "source": "C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.59 (1).jpeg",
+      "type": "handwritten_dimensional_inspection",
+      "quantity": {
+        "inspected": 3,
+        "accepted": 3,
+        "rejected": 0
+      },
+      "serial_columns": ["SN 3", "SN 2", "SN 1"],
+      "dimension_rows_detected": 8,
+      "part_number_candidate": {
+        "value": "1028?7068",
+        "status": "UNRESOLVED",
+        "confidence": "low"
+      },
+      "status": "HEADER_STRUCTURED_DIMENSIONS_REVIEW_REQUIRED",
+      "evidence": {
+        "prepared_image": "proof_images/doc_06_inspection_report_r0_enhanced.png",
+        "regions": ["header", "quantity block", "handwritten dimensions"]
+      }
+    },
+    {
+      "id": "DOC-07",
+      "source": "C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.59.jpeg",
+      "type": "dense_mechanical_test_table",
+      "schema_recovered": [
+        "yield_strength_ksi",
+        "tensile_strength_ksi",
+        "elongation_percent",
+        "reduction_area_percent",
+        "temperature_f",
+        "direction",
+        "hardness_or_impact_replicates",
+        "replicate_average"
+      ],
+      "status": "SCHEMA_RECOVERED_ROWS_REVIEW_REQUIRED",
+      "evidence": {
+        "prepared_image": "proof_images/doc_07_large_table_r90_enhanced.png",
+        "region": "full dense table"
+      }
+    },
+    {
+      "id": "DOC-08",
+      "source": "C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg",
+      "type": "chemistry_specification_and_results",
+      "heat_or_lot": "W3535",
+      "columns": ["C", "Mn", "P", "S", "Si", "Cr", "Ni", "Mo", "Cu", "Al", "V", "B", "Nb", "Ti"],
+      "spec_min": {"C": 0.4, "Mn": 0.9, "Si": 0.2, "Cr": 1.0, "Ni": 0.1, "Mo": 0.2, "V": 0.02},
+      "spec_max": {"C": 0.43, "Mn": 1.0, "P": 0.015, "S": 0.005, "Si": 0.35, "Cr": 1.1, "Ni": 0.25, "Mo": 0.25, "Cu": 0.25, "V": 0.03, "B": 0.0005, "Nb": 0.05, "Ti": 0.035},
+      "results": [
+        {"sample": "W3535 Ladle", "C": 0.41, "Mn": 0.98, "P": 0.007, "S": 0.001, "Si": 0.25, "Cr": 1.08, "Ni": 0.16, "Mo": 0.23, "Cu": 0.19, "Al": 0.029, "V": 0.026, "B": 0.0002, "Nb": 0.002, "Ti": 0.004},
+        {"sample": "W3535 01", "C": 0.41, "Mn": 0.96, "P": 0.007, "S": 0.001, "Si": 0.24, "Cr": 1.07, "Ni": 0.16, "Mo": 0.22, "Cu": 0.2, "Al": 0.027, "V": 0.024, "B": null, "Nb": 0.002, "Ti": 0.003},
+        {"sample": "W3535 27B", "C": 0.42, "Mn": 0.97, "P": 0.008, "S": 0.001, "Si": 0.25, "Cr": 1.08, "Ni": 0.16, "Mo": 0.24, "Cu": 0.19, "Al": 0.027, "V": 0.025, "B": null, "Nb": 0.002, "Ti": 0.004}
+      ],
+      "status": "STRUCTURED_AND_READY_FOR_SPEC_CHECK",
+      "evidence": {
+        "prepared_image": "proof_images/doc_08_chemistry_information_r90_enhanced.png",
+        "region": "chemistry information table"
+      }
+    },
+    {
+      "id": "DOC-09",
+      "source": "C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58.jpeg",
+      "type": "process_and_mechanical_properties",
+      "process_instruction": "Temper and stress relieve per ES-MA-174-2 Rev G",
+      "process_steps": [
+        {"process": "TEMPER", "time_hours": 5, "temperature_f": 1200, "cooling_method": "AIR COOLED"},
+        {"process": "STRESS RELIEVE", "time_hours": 5, "temperature_f": 1100, "cooling_method": "A/C TO AMBIENT"}
+      ],
+      "hardness": {
+        "SN_1A": "280-290 HBW/P",
+        "SN_2B": "283-286 HBW/P",
+        "thirteen_piece_values_hbw": [279, 271, 278, 279, 283, 279, 288, 291, 296, 278, 305, 301, 294]
+      },
+      "mechanical_properties": [
+        {"sample": "SN 1A", "tensile_psi": 133200, "yield_0_2_psi": 118000, "yield_0_6_psi": 118000, "elongation_percent": 22.4, "reduction_percent": 70.0},
+        {"sample": "SN 2B", "tensile_psi": 132300, "yield_0_2_psi": 116500, "yield_0_6_psi": 116500, "elongation_percent": 21.8, "reduction_percent": 68.0}
+      ],
+      "charpy": {
+        "specimen_mm": "10x10",
+        "direction": "TRANSVERSE",
+        "temperature_f": -4,
+        "ft_lbs": [104, 99, 96],
+        "mils_lateral_expansion": [71, 64, 64],
+        "shear_percent": [100, 100, 100]
+      },
+      "status": "STRUCTURED_AND_READY_FOR_RULE_CHECKS",
+      "evidence": {
+        "prepared_image": "proof_images/doc_09_mechanical_properties_r90_enhanced.png",
+        "regions": ["process table", "hardness text", "mechanical properties", "Charpy table"]
+      }
+    }
+  ],
+  "candidate_links": [
+    {
+      "documents": ["DOC-08", "DOC-09"],
+      "status": "CANDIDATE_LINK_NOT_MERGED",
+      "reason": "Captured consecutively and technically compatible, but no common document identifier is visible in the supplied regions."
+    },
+    {
+      "documents": ["DOC-01", "DOC-05"],
+      "status": "CANDIDATE_LINK_NOT_MERGED",
+      "reason": "Both appear to be material-test-report content and could belong to one packet, but no shared certificate or heat identifier is visible."
+    }
+  ],
+  "reconstruction_candidates": [
+    {
+      "target": "DOC-08 / W3535 01 / B",
+      "candidate_value": 0.0002,
+      "unit": "percent",
+      "method": "same-heat evidence propagation",
+      "supporting_evidence": "DOC-08 / W3535 Ladle / B = 0.0002",
+      "status": "PROPOSED_RECONCILIATION_NOT_AUTOFILLED",
+      "decision_rule_needed": "Confirm with the domain owner whether ladle boron is valid as a heat-level value for product samples."
+    },
+    {
+      "target": "DOC-08 / W3535 27B / B",
+      "candidate_value": 0.0002,
+      "unit": "percent",
+      "method": "same-heat evidence propagation",
+      "supporting_evidence": "DOC-08 / W3535 Ladle / B = 0.0002",
+      "status": "PROPOSED_RECONCILIATION_NOT_AUTOFILLED",
+      "decision_rule_needed": "Confirm with the domain owner whether ladle boron is valid as a heat-level value for product samples."
+    },
+    {
+      "target": "DOC-05 / hardness row 9 column 2",
+      "candidate_value": 39.0,
+      "unit": "HRC",
+      "method": "median of the three visible readings in the same row",
+      "supporting_evidence": [38.6, 39.2, 39.0],
+      "status": "IMPUTED_FOR_ANALYTICS_ONLY",
+      "decision_rule_needed": "Do not use as a certified test measurement; obtain the original or a corroborating source for compliance use."
+    }
+  ]
+}

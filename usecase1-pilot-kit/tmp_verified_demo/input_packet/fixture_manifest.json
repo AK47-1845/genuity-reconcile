@@ -1,0 +1,65 @@
+{
+  "packet": "industrial_material_demo_v1",
+  "documents": [
+    {
+      "sequence": 1,
+      "raw_document": "01_purchase_order.txt",
+      "ocr_result": "01_purchase_order.json"
+    },
+    {
+      "sequence": 2,
+      "raw_document": "02_supplier_invoice.txt",
+      "ocr_result": "02_supplier_invoice.json"
+    },
+    {
+      "sequence": 3,
+      "raw_document": "03_bom_revision_3.txt",
+      "ocr_result": "03_bom_revision_3.json"
+    },
+    {
+      "sequence": 4,
+      "raw_document": "04_material_spec_revision_9.txt",
+      "ocr_result": "04_material_spec_revision_9.json"
+    },
+    {
+      "sequence": 5,
+      "raw_document": "05_material_certificate.txt",
+      "ocr_result": "05_material_certificate.json"
+    },
+    {
+      "sequence": 6,
+      "raw_document": "06_certificate_of_conformance.txt",
+      "ocr_result": "06_certificate_of_conformance.json"
+    },
+    {
+      "sequence": 7,
+      "raw_document": "07_ladle_chemistry.txt",
+      "ocr_result": "07_ladle_chemistry.json"
+    },
+    {
+      "sequence": 8,
+      "raw_document": "08_mechanical_properties.txt",
+      "ocr_result": "08_mechanical_properties.json"
+    },
+    {
+      "sequence": 9,
+      "raw_document": "09_hardness_table.txt",
+      "ocr_result": "09_hardness_table.json"
+    },
+    {
+      "sequence": 10,
+      "raw_document": "10_certificate_duplicate_scan.txt",
+      "ocr_result": "10_certificate_duplicate_scan.json"
+    },
+    {
+      "sequence": 11,
+      "raw_document": "11_material_spec_old_revision.txt",
+      "ocr_result": "11_material_spec_old_revision.json"
+    },
+    {
+      "sequence": 12,
+      "raw_document": "12_final_inspection.txt",
+      "ocr_result": "12_final_inspection.json"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "benchmark_type": "local_smoke_not_capacity_claim",
+  "scope": "one connected chain with many source documents; multi-chain throughput uses the isolated batch command",
+  "documents": 1000,
+  "pages": 1000,
+  "unique_documents": 800,
+  "duplicate_documents": 200,
+  "cache_hits": 200,
+  "fields_processed": 3200,
+  "external_model_calls": 0,
+  "integrity_status": "PASS",
+  "elapsed_seconds": 2.468806,
+  "documents_per_second": 405.05,
+  "fields_per_second": 1296.17,
+  "environment_note": "Single-process local filesystem smoke test; rerun on deployment hardware for capacity planning."
+}

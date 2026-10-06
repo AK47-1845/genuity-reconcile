@@ -1,0 +1,2 @@
+[console_scripts]
+genuity-reconcile = genuity_reconcile.cli:main

@@ -1,0 +1,1967 @@
+[
+  {
+    "field_id": "FD-01_PURCHASE_ORDER-po_number",
+    "document_id": "01_PURCHASE_ORDER",
+    "name": "po_number",
+    "value": "PO-1001",
+    "unit": null,
+    "original_extraction": "PO-1001",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-01_PURCHASE_ORDER-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-01_PURCHASE_ORDER-supplier",
+    "document_id": "01_PURCHASE_ORDER",
+    "name": "supplier",
+    "value": "Apex Metals",
+    "unit": null,
+    "original_extraction": "Apex Metals",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-01_PURCHASE_ORDER-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-01_PURCHASE_ORDER-part_number",
+    "document_id": "01_PURCHASE_ORDER",
+    "name": "part_number",
+    "value": "PN-70725",
+    "unit": null,
+    "original_extraction": "PN-70725",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-01_PURCHASE_ORDER-003"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-01_PURCHASE_ORDER-material_grade",
+    "document_id": "01_PURCHASE_ORDER",
+    "name": "material_grade",
+    "value": "INCONEL 725",
+    "unit": null,
+    "original_extraction": "INCONEL alloy 725",
+    "status": "NORMALISED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-01_PURCHASE_ORDER-004"
+    ],
+    "method": "alias_normalisation",
+    "rationale": "Mapped a configured material-grade alias to the canonical grade.",
+    "rule_results": [
+      {
+        "rule": "material_grade_alias",
+        "result": "PASS"
+      }
+    ],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-01_PURCHASE_ORDER-quantity",
+    "document_id": "01_PURCHASE_ORDER",
+    "name": "quantity",
+    "value": 45,
+    "unit": "pcs",
+    "original_extraction": 45,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-01_PURCHASE_ORDER-005"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-01_PURCHASE_ORDER-unit_price",
+    "document_id": "01_PURCHASE_ORDER",
+    "name": "unit_price",
+    "value": 125.0,
+    "unit": "USD",
+    "original_extraction": 125.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-01_PURCHASE_ORDER-006"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-01_PURCHASE_ORDER-total_amount",
+    "document_id": "01_PURCHASE_ORDER",
+    "name": "total_amount",
+    "value": 5625.0,
+    "unit": "USD",
+    "original_extraction": null,
+    "status": "DERIVED_DETERMINISTIC",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-01_PURCHASE_ORDER-007",
+      "EV-01_PURCHASE_ORDER-005",
+      "EV-01_PURCHASE_ORDER-006"
+    ],
+    "method": "quantity_times_unit_price",
+    "rationale": "Calculated deterministically as quantity multiplied by unit price.",
+    "rule_results": [
+      {
+        "rule": "quantity_times_unit_price",
+        "result": "PASS",
+        "inputs": {
+          "quantity": 45,
+          "unit_price": 125.0
+        }
+      }
+    ],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-01_PURCHASE_ORDER-revision",
+    "document_id": "01_PURCHASE_ORDER",
+    "name": "revision",
+    "value": 3,
+    "unit": null,
+    "original_extraction": 3,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-01_PURCHASE_ORDER-008"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-02_SUPPLIER_INVOICE-invoice_number",
+    "document_id": "02_SUPPLIER_INVOICE",
+    "name": "invoice_number",
+    "value": "INV-8821",
+    "unit": null,
+    "original_extraction": "INV-8821",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-02_SUPPLIER_INVOICE-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-02_SUPPLIER_INVOICE-po_number",
+    "document_id": "02_SUPPLIER_INVOICE",
+    "name": "po_number",
+    "value": "PO-1001",
+    "unit": null,
+    "original_extraction": "PO-1001",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-02_SUPPLIER_INVOICE-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-02_SUPPLIER_INVOICE-supplier",
+    "document_id": "02_SUPPLIER_INVOICE",
+    "name": "supplier",
+    "value": "Apex Metals",
+    "unit": null,
+    "original_extraction": "Apex Metals",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-02_SUPPLIER_INVOICE-003"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-02_SUPPLIER_INVOICE-part_number",
+    "document_id": "02_SUPPLIER_INVOICE",
+    "name": "part_number",
+    "value": "PN-70725",
+    "unit": null,
+    "original_extraction": null,
+    "status": "RECOVERED_CROSS_DOCUMENT",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-02_SUPPLIER_INVOICE-004",
+      "EV-01_PURCHASE_ORDER-003"
+    ],
+    "method": "cross_document_exact_join",
+    "rationale": "Recovered from the authoritative purchase order only after exact PO-number and supplier corroboration.",
+    "rule_results": [
+      {
+        "rule": "exact_po_number_join",
+        "result": "PASS",
+        "key": "PO-1001"
+      },
+      {
+        "rule": "supplier_corroboration",
+        "result": "PASS",
+        "value": "Apex Metals"
+      }
+    ],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-02_SUPPLIER_INVOICE-quantity",
+    "document_id": "02_SUPPLIER_INVOICE",
+    "name": "quantity",
+    "value": 44,
+    "unit": "pcs",
+    "original_extraction": 44,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-02_SUPPLIER_INVOICE-005"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-02_SUPPLIER_INVOICE-unit_price",
+    "document_id": "02_SUPPLIER_INVOICE",
+    "name": "unit_price",
+    "value": 125.0,
+    "unit": "USD",
+    "original_extraction": 125.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-02_SUPPLIER_INVOICE-006"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-02_SUPPLIER_INVOICE-total_amount",
+    "document_id": "02_SUPPLIER_INVOICE",
+    "name": "total_amount",
+    "value": 5500.0,
+    "unit": "USD",
+    "original_extraction": 5500.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-02_SUPPLIER_INVOICE-007"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-03_BOM_REVISION_3-bom_number",
+    "document_id": "03_BOM_REVISION_3",
+    "name": "bom_number",
+    "value": "BOM-725-A",
+    "unit": null,
+    "original_extraction": "BOM-725-A",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-03_BOM_REVISION_3-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-03_BOM_REVISION_3-po_number",
+    "document_id": "03_BOM_REVISION_3",
+    "name": "po_number",
+    "value": "PO-1001",
+    "unit": null,
+    "original_extraction": "PO-1001",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-03_BOM_REVISION_3-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-03_BOM_REVISION_3-part_number",
+    "document_id": "03_BOM_REVISION_3",
+    "name": "part_number",
+    "value": "PN-70725",
+    "unit": null,
+    "original_extraction": "PN-7O725",
+    "status": "RECOVERED_OCR",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.98,
+    "critical": true,
+    "evidence_ids": [
+      "EV-03_BOM_REVISION_3-003"
+    ],
+    "method": "ocr_confusion_with_domain_candidate",
+    "rationale": "Replaced an OCR O/0 confusion only after the result matched the configured part registry.",
+    "rule_results": [
+      {
+        "rule": "candidate_in_allowed_part_numbers",
+        "result": "PASS",
+        "candidate": "PN-70725"
+      }
+    ],
+    "alternatives_rejected": [
+      {
+        "candidate": "PN-7O725",
+        "reason": "not present in configured part registry"
+      }
+    ],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-03_BOM_REVISION_3-material_grade",
+    "document_id": "03_BOM_REVISION_3",
+    "name": "material_grade",
+    "value": "INCONEL 725",
+    "unit": null,
+    "original_extraction": "UNS N07725",
+    "status": "NORMALISED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-03_BOM_REVISION_3-004"
+    ],
+    "method": "alias_normalisation",
+    "rationale": "Mapped a configured material-grade alias to the canonical grade.",
+    "rule_results": [
+      {
+        "rule": "material_grade_alias",
+        "result": "PASS"
+      }
+    ],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-03_BOM_REVISION_3-specification_number",
+    "document_id": "03_BOM_REVISION_3",
+    "name": "specification_number",
+    "value": "SPEC-725",
+    "unit": null,
+    "original_extraction": "SPEC-725",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-03_BOM_REVISION_3-005"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-03_BOM_REVISION_3-revision",
+    "document_id": "03_BOM_REVISION_3",
+    "name": "revision",
+    "value": 3,
+    "unit": null,
+    "original_extraction": 3,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-03_BOM_REVISION_3-006"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-specification_number",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "specification_number",
+    "value": "SPEC-725",
+    "unit": null,
+    "original_extraction": "SPEC-725",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-material_grade",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "material_grade",
+    "value": "INCONEL 725",
+    "unit": null,
+    "original_extraction": "INCONEL 725",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-revision",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "revision",
+    "value": 9,
+    "unit": null,
+    "original_extraction": 9,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-003"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-limit.Cr.min",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "limit.Cr.min",
+    "value": 19.0,
+    "unit": "percent",
+    "original_extraction": 19.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-004"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-limit.Cr.max",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "limit.Cr.max",
+    "value": 22.5,
+    "unit": "percent",
+    "original_extraction": 22.5,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-005"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-limit.Ni.min",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "limit.Ni.min",
+    "value": 55.0,
+    "unit": "percent",
+    "original_extraction": 55.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-006"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-limit.Mo.min",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "limit.Mo.min",
+    "value": 7.0,
+    "unit": "percent",
+    "original_extraction": 7.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-007"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-limit.Mo.max",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "limit.Mo.max",
+    "value": 9.5,
+    "unit": "percent",
+    "original_extraction": 9.5,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-008"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-limit.NbTa.min",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "limit.NbTa.min",
+    "value": 2.75,
+    "unit": "percent",
+    "original_extraction": 2.75,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-009"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-limit.NbTa.max",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "limit.NbTa.max",
+    "value": 4.0,
+    "unit": "percent",
+    "original_extraction": 4.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-010"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-limit.B.max",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "limit.B.max",
+    "value": 0.006,
+    "unit": "percent",
+    "original_extraction": 0.006,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-011"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-limit.tensile.min",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "limit.tensile.min",
+    "value": 827.0,
+    "unit": "MPa",
+    "original_extraction": 827.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-012"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-04_MATERIAL_SPEC_REVISION_9-limit.tensile.max",
+    "document_id": "04_MATERIAL_SPEC_REVISION_9",
+    "name": "limit.tensile.max",
+    "value": 1034.0,
+    "unit": "MPa",
+    "original_extraction": 1034.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-04_MATERIAL_SPEC_REVISION_9-013"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-certificate_number",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "certificate_number",
+    "value": "MTR-900",
+    "unit": null,
+    "original_extraction": "MTR-900",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-heat_number",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "heat_number",
+    "value": "W3535",
+    "unit": null,
+    "original_extraction": "W3535",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-material_grade",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "material_grade",
+    "value": "INCONEL 725",
+    "unit": null,
+    "original_extraction": "INCONEL 725",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-003"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-supplier",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "supplier",
+    "value": "Apex Metals",
+    "unit": null,
+    "original_extraction": "Apex Metals",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-004"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-chemistry.C",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "chemistry.C",
+    "value": 0.004,
+    "unit": "percent",
+    "original_extraction": 0.004,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-005"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-chemistry.Ni",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "chemistry.Ni",
+    "value": 58.1,
+    "unit": "percent",
+    "original_extraction": 58.1,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-006"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-chemistry.Co",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "chemistry.Co",
+    "value": 0.04,
+    "unit": "percent",
+    "original_extraction": 0.04,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-007"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-chemistry.Cr",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "chemistry.Cr",
+    "value": 20.8,
+    "unit": "percent",
+    "original_extraction": 20.8,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-008"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-chemistry.Mo",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "chemistry.Mo",
+    "value": 8.05,
+    "unit": "percent",
+    "original_extraction": 8.05,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-009"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-chemistry.Nb",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "chemistry.Nb",
+    "value": 3.42,
+    "unit": "percent",
+    "original_extraction": 3.42,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-010"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-chemistry.Ta",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "chemistry.Ta",
+    "value": 0.0032,
+    "unit": "percent",
+    "original_extraction": 0.0032,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-011"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-chemistry.B",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "chemistry.B",
+    "value": 0.0002,
+    "unit": "percent",
+    "original_extraction": null,
+    "status": "PROPOSED_CROSS_DOCUMENT",
+    "acceptance": "REVIEW",
+    "confidence": 0.92,
+    "critical": false,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-012",
+      "EV-07_LADLE_CHEMISTRY-009"
+    ],
+    "method": "cross_document_heat_candidate",
+    "rationale": "Same-heat ladle analysis supplies a candidate, but the domain pack does not permit treating it as the certificate's observed product result.",
+    "rule_results": [
+      {
+        "rule": "exact_heat_number_join",
+        "result": "PASS",
+        "key": "W3535"
+      },
+      {
+        "rule": "material_grade_corroboration",
+        "result": "PASS",
+        "value": "INCONEL 725"
+      },
+      {
+        "rule": "certificate_product_equals_ladle",
+        "result": "NOT_CONFIGURED"
+      }
+    ],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": false,
+    "analytics_only": false,
+    "requires_human_confirmation": true
+  },
+  {
+    "field_id": "FD-05_MATERIAL_CERTIFICATE-tensile_strength_mpa",
+    "document_id": "05_MATERIAL_CERTIFICATE",
+    "name": "tensile_strength_mpa",
+    "value": 910.0,
+    "unit": "MPa",
+    "original_extraction": null,
+    "status": "PROPOSED_VLM",
+    "acceptance": "REVIEW",
+    "confidence": 0.91,
+    "critical": true,
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-013"
+    ],
+    "method": "cropped_region_vlm_adapter_simulated",
+    "rationale": "Only the obscured mechanical-table crop was routed; candidate is not auto-accepted.",
+    "rule_results": [
+      {
+        "rule": "model_confidence_is_not_acceptance",
+        "result": "REVIEW_REQUIRED",
+        "model": "gpt-5.4-mini (simulated adapter)"
+      }
+    ],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": false,
+    "analytics_only": false,
+    "requires_human_confirmation": true
+  },
+  {
+    "field_id": "FD-06_CERTIFICATE_OF_CONFORMANCE-coc_number",
+    "document_id": "06_CERTIFICATE_OF_CONFORMANCE",
+    "name": "coc_number",
+    "value": "COC-77",
+    "unit": null,
+    "original_extraction": "COC-77",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-06_CERTIFICATE_OF_CONFORMANCE-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-06_CERTIFICATE_OF_CONFORMANCE-po_number",
+    "document_id": "06_CERTIFICATE_OF_CONFORMANCE",
+    "name": "po_number",
+    "value": "PO-1001",
+    "unit": null,
+    "original_extraction": "PO-1001",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-06_CERTIFICATE_OF_CONFORMANCE-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-06_CERTIFICATE_OF_CONFORMANCE-certificate_number",
+    "document_id": "06_CERTIFICATE_OF_CONFORMANCE",
+    "name": "certificate_number",
+    "value": "MTR-900",
+    "unit": null,
+    "original_extraction": "MTR-900",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-06_CERTIFICATE_OF_CONFORMANCE-003"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-06_CERTIFICATE_OF_CONFORMANCE-heat_number",
+    "document_id": "06_CERTIFICATE_OF_CONFORMANCE",
+    "name": "heat_number",
+    "value": "W3535",
+    "unit": null,
+    "original_extraction": "W3535",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-06_CERTIFICATE_OF_CONFORMANCE-004"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-06_CERTIFICATE_OF_CONFORMANCE-supplier",
+    "document_id": "06_CERTIFICATE_OF_CONFORMANCE",
+    "name": "supplier",
+    "value": "Apex Metals",
+    "unit": null,
+    "original_extraction": "Apex Metals",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-06_CERTIFICATE_OF_CONFORMANCE-005"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-07_LADLE_CHEMISTRY-heat_number",
+    "document_id": "07_LADLE_CHEMISTRY",
+    "name": "heat_number",
+    "value": "W3535",
+    "unit": null,
+    "original_extraction": "W3535",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-07_LADLE_CHEMISTRY-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-07_LADLE_CHEMISTRY-material_grade",
+    "document_id": "07_LADLE_CHEMISTRY",
+    "name": "material_grade",
+    "value": "INCONEL 725",
+    "unit": null,
+    "original_extraction": "INCONEL 725",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-07_LADLE_CHEMISTRY-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-07_LADLE_CHEMISTRY-chemistry.C",
+    "document_id": "07_LADLE_CHEMISTRY",
+    "name": "chemistry.C",
+    "value": 0.004,
+    "unit": "percent",
+    "original_extraction": 0.004,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-07_LADLE_CHEMISTRY-003"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-07_LADLE_CHEMISTRY-chemistry.Ni",
+    "document_id": "07_LADLE_CHEMISTRY",
+    "name": "chemistry.Ni",
+    "value": 58.14,
+    "unit": "percent",
+    "original_extraction": 58.14,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-07_LADLE_CHEMISTRY-004"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-07_LADLE_CHEMISTRY-chemistry.Cr",
+    "document_id": "07_LADLE_CHEMISTRY",
+    "name": "chemistry.Cr",
+    "value": 20.8,
+    "unit": "percent",
+    "original_extraction": 20.8,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-07_LADLE_CHEMISTRY-005"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-07_LADLE_CHEMISTRY-chemistry.Mo",
+    "document_id": "07_LADLE_CHEMISTRY",
+    "name": "chemistry.Mo",
+    "value": 8.05,
+    "unit": "percent",
+    "original_extraction": 8.05,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-07_LADLE_CHEMISTRY-006"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-07_LADLE_CHEMISTRY-chemistry.Nb",
+    "document_id": "07_LADLE_CHEMISTRY",
+    "name": "chemistry.Nb",
+    "value": 3.42,
+    "unit": "percent",
+    "original_extraction": 3.42,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-07_LADLE_CHEMISTRY-007"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-07_LADLE_CHEMISTRY-chemistry.Ta",
+    "document_id": "07_LADLE_CHEMISTRY",
+    "name": "chemistry.Ta",
+    "value": 0.0032,
+    "unit": "percent",
+    "original_extraction": 0.0032,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-07_LADLE_CHEMISTRY-008"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-07_LADLE_CHEMISTRY-chemistry.B",
+    "document_id": "07_LADLE_CHEMISTRY",
+    "name": "chemistry.B",
+    "value": 0.0002,
+    "unit": "percent",
+    "original_extraction": 0.0002,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-07_LADLE_CHEMISTRY-009"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-08_MECHANICAL_PROPERTIES-heat_number",
+    "document_id": "08_MECHANICAL_PROPERTIES",
+    "name": "heat_number",
+    "value": "W3535",
+    "unit": null,
+    "original_extraction": "W3535",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-08_MECHANICAL_PROPERTIES-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-08_MECHANICAL_PROPERTIES-part_number",
+    "document_id": "08_MECHANICAL_PROPERTIES",
+    "name": "part_number",
+    "value": "PN-70725",
+    "unit": null,
+    "original_extraction": "PN-70725",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-08_MECHANICAL_PROPERTIES-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-08_MECHANICAL_PROPERTIES-tensile_strength_mpa",
+    "document_id": "08_MECHANICAL_PROPERTIES",
+    "name": "tensile_strength_mpa",
+    "value": 910.107963,
+    "unit": "MPa",
+    "original_extraction": 132000.0,
+    "status": "RECOVERED_UNIT",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-08_MECHANICAL_PROPERTIES-003"
+    ],
+    "method": "unit_constraint_recovery",
+    "rationale": "The displayed magnitude is impossible in MPa but valid after deterministic psi-to-MPa conversion.",
+    "rule_results": [
+      {
+        "rule": "raw_mpa_within_domain",
+        "result": "FAIL",
+        "value": 132000.0
+      },
+      {
+        "rule": "psi_conversion_within_domain",
+        "result": "PASS",
+        "value": 910.107963
+      }
+    ],
+    "alternatives_rejected": [
+      {
+        "candidate": 132000.0,
+        "unit": "MPa",
+        "reason": "exceeds configured physical bound"
+      }
+    ],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-08_MECHANICAL_PROPERTIES-yield_strength_psi",
+    "document_id": "08_MECHANICAL_PROPERTIES",
+    "name": "yield_strength_psi",
+    "value": 126000.0,
+    "unit": "psi",
+    "original_extraction": 126000.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-08_MECHANICAL_PROPERTIES-004"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-08_MECHANICAL_PROPERTIES-elongation_percent",
+    "document_id": "08_MECHANICAL_PROPERTIES",
+    "name": "elongation_percent",
+    "value": 24.0,
+    "unit": "percent",
+    "original_extraction": 24.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-08_MECHANICAL_PROPERTIES-005"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-09_HARDNESS_TABLE-heat_number",
+    "document_id": "09_HARDNESS_TABLE",
+    "name": "heat_number",
+    "value": "W3535",
+    "unit": null,
+    "original_extraction": "W3535",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-09_HARDNESS_TABLE-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-09_HARDNESS_TABLE-hardness_readings_hrc",
+    "document_id": "09_HARDNESS_TABLE",
+    "name": "hardness_readings_hrc",
+    "value": [
+      38.6,
+      null,
+      39.2,
+      39.0
+    ],
+    "unit": "HRC",
+    "original_extraction": [
+      38.6,
+      null,
+      39.2,
+      39.0
+    ],
+    "status": "LOW_CONFIDENCE",
+    "acceptance": "REVIEW",
+    "confidence": 0.79,
+    "critical": false,
+    "evidence_ids": [
+      "EV-09_HARDNESS_TABLE-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": false,
+    "analytics_only": false,
+    "requires_human_confirmation": true
+  },
+  {
+    "field_id": "FD-11_MATERIAL_SPEC_OLD_REVISION-specification_number",
+    "document_id": "11_MATERIAL_SPEC_OLD_REVISION",
+    "name": "specification_number",
+    "value": "SPEC-725",
+    "unit": null,
+    "original_extraction": "SPEC-725",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-11_MATERIAL_SPEC_OLD_REVISION-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-11_MATERIAL_SPEC_OLD_REVISION-material_grade",
+    "document_id": "11_MATERIAL_SPEC_OLD_REVISION",
+    "name": "material_grade",
+    "value": "INCONEL 725",
+    "unit": null,
+    "original_extraction": "INCONEL 725",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-11_MATERIAL_SPEC_OLD_REVISION-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-11_MATERIAL_SPEC_OLD_REVISION-revision",
+    "document_id": "11_MATERIAL_SPEC_OLD_REVISION",
+    "name": "revision",
+    "value": 8,
+    "unit": null,
+    "original_extraction": 8,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-11_MATERIAL_SPEC_OLD_REVISION-003"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-11_MATERIAL_SPEC_OLD_REVISION-limit.Cr.min",
+    "document_id": "11_MATERIAL_SPEC_OLD_REVISION",
+    "name": "limit.Cr.min",
+    "value": 19.0,
+    "unit": "percent",
+    "original_extraction": 19.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-11_MATERIAL_SPEC_OLD_REVISION-004"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-11_MATERIAL_SPEC_OLD_REVISION-limit.Cr.max",
+    "document_id": "11_MATERIAL_SPEC_OLD_REVISION",
+    "name": "limit.Cr.max",
+    "value": 21.0,
+    "unit": "percent",
+    "original_extraction": 21.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-11_MATERIAL_SPEC_OLD_REVISION-005"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-11_MATERIAL_SPEC_OLD_REVISION-limit.Ni.min",
+    "document_id": "11_MATERIAL_SPEC_OLD_REVISION",
+    "name": "limit.Ni.min",
+    "value": 55.0,
+    "unit": "percent",
+    "original_extraction": 55.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-11_MATERIAL_SPEC_OLD_REVISION-006"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-11_MATERIAL_SPEC_OLD_REVISION-limit.Mo.min",
+    "document_id": "11_MATERIAL_SPEC_OLD_REVISION",
+    "name": "limit.Mo.min",
+    "value": 7.0,
+    "unit": "percent",
+    "original_extraction": 7.0,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-11_MATERIAL_SPEC_OLD_REVISION-007"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-11_MATERIAL_SPEC_OLD_REVISION-limit.Mo.max",
+    "document_id": "11_MATERIAL_SPEC_OLD_REVISION",
+    "name": "limit.Mo.max",
+    "value": 9.5,
+    "unit": "percent",
+    "original_extraction": 9.5,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-11_MATERIAL_SPEC_OLD_REVISION-008"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-12_FINAL_INSPECTION-part_number",
+    "document_id": "12_FINAL_INSPECTION",
+    "name": "part_number",
+    "value": "PN-70725",
+    "unit": null,
+    "original_extraction": "PN-70725",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-12_FINAL_INSPECTION-001"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-12_FINAL_INSPECTION-heat_number",
+    "document_id": "12_FINAL_INSPECTION",
+    "name": "heat_number",
+    "value": "W3535",
+    "unit": null,
+    "original_extraction": "W3535",
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": true,
+    "evidence_ids": [
+      "EV-12_FINAL_INSPECTION-002"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-12_FINAL_INSPECTION-quantity_inspected",
+    "document_id": "12_FINAL_INSPECTION",
+    "name": "quantity_inspected",
+    "value": 45,
+    "unit": "pcs",
+    "original_extraction": 45,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-12_FINAL_INSPECTION-003"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-12_FINAL_INSPECTION-quantity_accepted",
+    "document_id": "12_FINAL_INSPECTION",
+    "name": "quantity_accepted",
+    "value": 45,
+    "unit": "pcs",
+    "original_extraction": 45,
+    "status": "OBSERVED",
+    "acceptance": "ACCEPTED",
+    "confidence": 0.99,
+    "critical": false,
+    "evidence_ids": [
+      "EV-12_FINAL_INSPECTION-004"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Value supplied by the existing OCR adapter.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": true,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-12_FINAL_INSPECTION-inspector_signoff",
+    "document_id": "12_FINAL_INSPECTION",
+    "name": "inspector_signoff",
+    "value": null,
+    "unit": null,
+    "original_extraction": null,
+    "status": "MISSING",
+    "acceptance": "NOT_ACCEPTED",
+    "confidence": 0.0,
+    "critical": false,
+    "evidence_ids": [
+      "EV-12_FINAL_INSPECTION-005"
+    ],
+    "method": "existing_ocr",
+    "rationale": "Blank in existing OCR output.",
+    "rule_results": [],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": false,
+    "analytics_only": false,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-09_HARDNESS_TABLE-hardness_row_9_col_2_hrc",
+    "document_id": "09_HARDNESS_TABLE",
+    "name": "hardness_row_9_col_2_hrc",
+    "value": 39.0,
+    "unit": "HRC",
+    "original_extraction": null,
+    "status": "ANALYTICS_ONLY",
+    "acceptance": "ANALYTICS_ONLY",
+    "confidence": 0.0,
+    "critical": false,
+    "evidence_ids": [
+      "EV-09_HARDNESS_TABLE-002"
+    ],
+    "method": "same_row_median_imputation",
+    "rationale": "Median of visible same-row readings; never represented as a certified measurement.",
+    "rule_results": [
+      {
+        "rule": "imputation_purpose",
+        "result": "PASS",
+        "purpose": "analytics_only"
+      }
+    ],
+    "alternatives_rejected": [],
+    "safe_for_operational_use": false,
+    "analytics_only": true,
+    "requires_human_confirmation": false
+  },
+  {
+    "field_id": "FD-CONNECTED-PO-1001-quantity",
+    "document_id": "CONNECTED-PO-1001",
+    "name": "quantity",
+    "value": null,
+    "unit": "pcs",
+    "original_extraction": [
+      {
+        "document_id": "01_PURCHASE_ORDER",
+        "document_type": "purchase_order",
+        "value": 45,
+        "authority_rank": 1
+      },
+      {
+        "document_id": "02_SUPPLIER_INVOICE",
+        "document_type": "invoice",
+        "value": 44,
+        "authority_rank": 2
+      }
+    ],
+    "status": "CONFLICT",
+    "acceptance": "REVIEW",
+    "confidence": 0.0,
+    "critical": true,
+    "evidence_ids": [
+      "EV-01_PURCHASE_ORDER-005",
+      "EV-02_SUPPLIER_INVOICE-005"
+    ],
+    "method": "cross_document_conflict_detection",
+    "rationale": "Sources disagree on quantity; source authority is recorded but no value is silently selected.",
+    "rule_results": [
+      {
+        "rule": "cross_document_quantity_equality",
+        "result": "FAIL"
+      },
+      {
+        "rule": "source_authority_order",
+        "result": "RECORDED_NOT_AUTO_APPLIED",
+        "order": [
+          "purchase_order",
+          "invoice"
+        ]
+      }
+    ],
+    "alternatives_rejected": [
+      {
+        "document_id": "01_PURCHASE_ORDER",
+        "document_type": "purchase_order",
+        "value": 45,
+        "authority_rank": 1
+      },
+      {
+        "document_id": "02_SUPPLIER_INVOICE",
+        "document_type": "invoice",
+        "value": 44,
+        "authority_rank": 2
+      }
+    ],
+    "safe_for_operational_use": false,
+    "analytics_only": false,
+    "requires_human_confirmation": true
+  }
+]

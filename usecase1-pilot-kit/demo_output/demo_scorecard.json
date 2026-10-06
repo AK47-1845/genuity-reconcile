@@ -1,0 +1,100 @@
+{
+  "all_ten_behaviours_proved": true,
+  "behaviours": [
+    {
+      "number": 1,
+      "behaviour": "OCR misread recovered",
+      "result": "PASS",
+      "evidence": [
+        "FD-03_BOM_REVISION_3-part_number"
+      ]
+    },
+    {
+      "number": 2,
+      "behaviour": "Missing value found in related document",
+      "result": "PASS",
+      "evidence": [
+        "FD-02_SUPPLIER_INVOICE-part_number"
+      ]
+    },
+    {
+      "number": 3,
+      "behaviour": "Deterministic calculation",
+      "result": "PASS",
+      "evidence": [
+        "FD-01_PURCHASE_ORDER-total_amount"
+      ]
+    },
+    {
+      "number": 4,
+      "behaviour": "Proposal not automatically accepted",
+      "result": "PASS",
+      "evidence": [
+        "FD-05_MATERIAL_CERTIFICATE-chemistry.B"
+      ]
+    },
+    {
+      "number": 5,
+      "behaviour": "Statistical imputation is analytics-only",
+      "result": "PASS",
+      "evidence": [
+        "FD-09_HARDNESS_TABLE-hardness_row_9_col_2_hrc"
+      ]
+    },
+    {
+      "number": 6,
+      "behaviour": "Cross-document conflict visible",
+      "result": "PASS",
+      "evidence": [
+        "FD-CONNECTED-PO-1001-quantity"
+      ]
+    },
+    {
+      "number": 7,
+      "behaviour": "Genuinely unknowable field unresolved",
+      "result": "PASS",
+      "evidence": [
+        "inspector_signoff"
+      ]
+    },
+    {
+      "number": 8,
+      "behaviour": "Document processed without LLM/VLM",
+      "result": "PASS",
+      "evidence": 10
+    },
+    {
+      "number": 9,
+      "behaviour": "Difficult crop optionally routed or reused from content cache",
+      "result": "PASS",
+      "evidence": {
+        "external_regions": 0,
+        "model_cache_hits": 1
+      }
+    },
+    {
+      "number": 10,
+      "behaviour": "Final cost comparison produced",
+      "result": "PASS",
+      "evidence": [
+        "A_OCR_only",
+        "B_OCR_plus_rules",
+        "C_OCR_reconciliation_validation",
+        "D_full_page_VLM",
+        "E_Genuity_selective_routing"
+      ]
+    }
+  ],
+  "targets": {
+    "automatic_acceptance_evidence_coverage_100_percent": true,
+    "zero_unsupported_critical_auto_fills": true,
+    "zero_synthetic_as_observed": true,
+    "zero_silent_conflict_resolution": true,
+    "external_routing_below_10_percent_of_pages": true,
+    "critical_field_precision_prioritised": true,
+    "critical_field_auto_coverage_100_percent_on_fixture": true,
+    "provenance_integrity_gate_passed": true
+  },
+  "external_routing_rate": 0.0,
+  "external_routing_denominator": "pages"
+}

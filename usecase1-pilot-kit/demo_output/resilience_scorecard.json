@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "checks_passed": 6,
+  "checks_total": 6,
+  "checks": [
+    {
+      "check_id": "malformed_ocr_contract_rejected",
+      "result": "PASS",
+      "observation": "invalid confidence rejected before reconciliation"
+    },
+    {
+      "check_id": "unknown_document_quarantined",
+      "result": "PASS",
+      "observation": "status=UNCLASSIFIED_SOURCE; acceptance=REVIEW"
+    },
+    {
+      "check_id": "omitted_required_fields_escalated",
+      "result": "PASS",
+      "observation": "unresolved=['quantity', 'supplier']"
+    },
+    {
+      "check_id": "canonical_field_alias_collision_rejected",
+      "result": "PASS",
+      "observation": "canonical po_number alias collision rejected"
+    },
+    {
+      "check_id": "tampered_model_cache_rejected",
+      "result": "PASS",
+      "observation": "altered cached candidate failed integrity validation"
+    },
+    {
+      "check_id": "domain_policy_violation_rejected",
+      "result": "PASS",
+      "observation": "forbidden reconstruction failed the integrity gate"
+    }
+  ],
+  "scope": "Executable demo failure injections; not a substitute for production red-team testing."
+}

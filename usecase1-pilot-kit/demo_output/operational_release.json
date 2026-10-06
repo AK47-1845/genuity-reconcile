@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "status": "REVIEW_REQUIRED",
+  "target": "QMS_STAGING",
+  "writeback_allowed": false,
+  "scope_sha256": "3279273dad0e780d7e44ebc17fbcda7b8cb8af7a3dacd5658acd2622c0ccfec2",
+  "gates": [
+    {
+      "gate": "integrity",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "gate": "accepted_field_evidence",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "gate": "accepted_field_operational_safety",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "gate": "blocking_exceptions",
+      "pass": false,
+      "detail": [
+        "EX-001",
+        "EX-002",
+        "EX-003",
+        "EX-004",
+        "EX-006"
+      ]
+    },
+    {
+      "gate": "critical_fields_resolved",
+      "pass": false,
+      "detail": [
+        "FD-05_MATERIAL_CERTIFICATE-tensile_strength_mpa",
+        "FD-CONNECTED-PO-1001-quantity"
+      ]
+    },
+    {
+      "gate": "named_scoped_approvals",
+      "pass": false,
+      "detail": {
+        "approved_roles": [],
+        "missing_roles": [
+          "domain_owner",
+          "quality_owner",
+          "system_owner"
+        ]
+      }
+    },
+    {
+      "gate": "separation_of_duties",
+      "pass": true,
+      "detail": {
+        "reviewers_holding_multiple_required_roles": []
+      }
+    }
+  ],
+  "safety_failures": [
+    "blocking_exceptions",
+    "critical_fields_resolved"
+  ],
+  "required_approval_roles": [
+    "domain_owner",
+    "quality_owner",
+    "system_owner"
+  ],
+  "accepted_approval_ids": [],
+  "governance_failures": [
+    "missing_required_approval_roles"
+  ],
+  "operating_rule": "No weighted score can override a failed gate; production write-back requires a separate client-controlled promotion."
+}

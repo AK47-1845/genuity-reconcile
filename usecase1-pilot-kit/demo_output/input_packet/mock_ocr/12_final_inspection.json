@@ -1,0 +1,77 @@
+{
+  "adapter": "existing_ocr_fixture_v1",
+  "page_count": 1,
+  "text": "FINAL INSPECTION REPORT\nPART NUMBER: PN-70725\nHEAT NUMBER: W3535\nQUANTITY INSPECTED: 45\nQUANTITY ACCEPTED: 45\nINSPECTOR SIGNOFF: [missing]",
+  "fields": [
+    {
+      "name": "part_number",
+      "value": "PN-70725",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "heat_number",
+      "value": "W3535",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "quantity_inspected",
+      "value": 45,
+      "unit": "pcs",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "quantity_accepted",
+      "value": 45,
+      "unit": "pcs",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "inspector_signoff",
+      "value": null,
+      "unit": null,
+      "confidence": 0.0,
+      "page": 1,
+      "region": "approval_block",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    }
+  ]
+}

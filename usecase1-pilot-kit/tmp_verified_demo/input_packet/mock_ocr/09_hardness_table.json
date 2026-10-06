@@ -1,0 +1,40 @@
+{
+  "adapter": "existing_ocr_fixture_v1",
+  "page_count": 1,
+  "text": "HARDNESS TEST TABLE\nHEAT NUMBER: W3535\nHRC ROW 9: 38.6, [obscured], 39.2, 39.0",
+  "fields": [
+    {
+      "name": "heat_number",
+      "value": "W3535",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "hardness_readings_hrc",
+      "value": [
+        38.6,
+        null,
+        39.2,
+        39.0
+      ],
+      "unit": "HRC",
+      "confidence": 0.79,
+      "page": 1,
+      "region": "hardness_table_row_9",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    }
+  ]
+}

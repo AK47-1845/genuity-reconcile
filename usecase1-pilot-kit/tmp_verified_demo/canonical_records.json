@@ -1,0 +1,82 @@
+{
+  "record_id": "CONNECTED-PO-1001",
+  "po_number": "PO-1001",
+  "part_number": "PN-70725",
+  "supplier": "Apex Metals",
+  "bom_number": "BOM-725-A",
+  "specification": {
+    "number": "SPEC-725",
+    "revision": 9
+  },
+  "material_certificate": "MTR-900",
+  "certificate_of_conformance": "COC-77",
+  "heat_number": "W3535",
+  "material_grade": "INCONEL 725",
+  "quantity": {
+    "value": null,
+    "status": "CONFLICT",
+    "candidates": [
+      {
+        "document_id": "01_PURCHASE_ORDER",
+        "document_type": "purchase_order",
+        "value": 45,
+        "authority_rank": 1
+      },
+      {
+        "document_id": "02_SUPPLIER_INVOICE",
+        "document_type": "invoice",
+        "value": 44,
+        "authority_rank": 2
+      }
+    ],
+    "evidence_ids": [
+      "EV-01_PURCHASE_ORDER-005",
+      "EV-02_SUPPLIER_INVOICE-005"
+    ]
+  },
+  "identity_conflicts": [],
+  "chemistry_satisfies_specification": true,
+  "chemistry_validation_status": "PASS",
+  "boron_certificate_value": {
+    "value": 0.0002,
+    "status": "PROPOSED_NOT_ACCEPTED",
+    "safe_for_operational_use": false
+  },
+  "synthetic_values": [
+    {
+      "field": "hardness_row_9_col_2_hrc",
+      "value": 39.0,
+      "purpose": "analytics_only"
+    }
+  ],
+  "unresolved_fields": [
+    "inspector_signoff"
+  ],
+  "path": [
+    "PO:PO-1001",
+    "PART:PN-70725",
+    "BOM:BOM-725-A",
+    "SPEC:SPEC-725:R9",
+    "CERT:MTR-900",
+    "HEAT:W3535",
+    "TEST:CHEM-W3535",
+    "TEST:MECH-W3535"
+  ],
+  "material_certificate_link_explanation": {
+    "answer": "MTR-900",
+    "path": [
+      "PO:PO-1001",
+      "COC:COC-77",
+      "CERT:MTR-900"
+    ],
+    "join_keys": [
+      "po_number",
+      "certificate_number"
+    ],
+    "corroboration": [
+      "supplier",
+      "heat_number"
+    ],
+    "status": "EVIDENCE_LINKED"
+  }
+}

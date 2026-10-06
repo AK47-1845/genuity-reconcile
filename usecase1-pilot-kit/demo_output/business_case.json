@@ -1,0 +1,179 @@
+{
+  "model_type": "bottom_up_scenario_not_market_forecast",
+  "base_batch_pages": 12,
+  "unit_economics": {
+    "genuity_cost_per_page_usd": 0.470337,
+    "full_page_vlm_cost_per_page_usd": 1.129127,
+    "ocr_only_with_review_cost_per_page_usd": 2.72025,
+    "savings_per_page_vs_full_page_vlm_usd": 0.65879,
+    "savings_per_page_vs_ocr_only_with_review_usd": 2.249913
+  },
+  "scale_scenarios": [
+    {
+      "annual_pages": 100000,
+      "genuity_estimated_cost_usd": 47033.69,
+      "full_page_vlm_estimated_cost_usd": 112912.73,
+      "ocr_only_with_review_estimated_cost_usd": 272025.0,
+      "savings_vs_full_page_vlm_usd": 65879.03,
+      "savings_vs_ocr_only_with_review_usd": 224991.31,
+      "illustrative_revenue_at_15pct_of_full_vlm_savings_usd": 9881.86
+    },
+    {
+      "annual_pages": 1000000,
+      "genuity_estimated_cost_usd": 470336.92,
+      "full_page_vlm_estimated_cost_usd": 1129127.25,
+      "ocr_only_with_review_estimated_cost_usd": 2720250.0,
+      "savings_vs_full_page_vlm_usd": 658790.33,
+      "savings_vs_ocr_only_with_review_usd": 2249913.08,
+      "illustrative_revenue_at_15pct_of_full_vlm_savings_usd": 98818.55
+    },
+    {
+      "annual_pages": 10000000,
+      "genuity_estimated_cost_usd": 4703369.17,
+      "full_page_vlm_estimated_cost_usd": 11291272.5,
+      "ocr_only_with_review_estimated_cost_usd": 27202500.0,
+      "savings_vs_full_page_vlm_usd": 6587903.33,
+      "savings_vs_ocr_only_with_review_usd": 22499130.83,
+      "illustrative_revenue_at_15pct_of_full_vlm_savings_usd": 988185.5
+    },
+    {
+      "annual_pages": 100000000,
+      "genuity_estimated_cost_usd": 47033691.67,
+      "full_page_vlm_estimated_cost_usd": 112912725.0,
+      "ocr_only_with_review_estimated_cost_usd": 272025000.0,
+      "savings_vs_full_page_vlm_usd": 65879033.33,
+      "savings_vs_ocr_only_with_review_usd": 224991308.33,
+      "illustrative_revenue_at_15pct_of_full_vlm_savings_usd": 9881855.0
+    },
+    {
+      "annual_pages": 1000000000,
+      "genuity_estimated_cost_usd": 470336916.67,
+      "full_page_vlm_estimated_cost_usd": 1129127250.0,
+      "ocr_only_with_review_estimated_cost_usd": 2720250000.0,
+      "savings_vs_full_page_vlm_usd": 658790333.33,
+      "savings_vs_ocr_only_with_review_usd": 2249913083.33,
+      "illustrative_revenue_at_15pct_of_full_vlm_savings_usd": 98818550.0
+    }
+  ],
+  "implementation_break_even": [
+    {
+      "implementation_cost_usd": 50000,
+      "pages_to_break_even_vs_full_page_vlm": 75897,
+      "pages_to_break_even_vs_ocr_only_with_review": 22224
+    },
+    {
+      "implementation_cost_usd": 100000,
+      "pages_to_break_even_vs_full_page_vlm": 151794,
+      "pages_to_break_even_vs_ocr_only_with_review": 44447
+    },
+    {
+      "implementation_cost_usd": 250000,
+      "pages_to_break_even_vs_full_page_vlm": 379484,
+      "pages_to_break_even_vs_ocr_only_with_review": 111116
+    },
+    {
+      "implementation_cost_usd": 1000000,
+      "pages_to_break_even_vs_full_page_vlm": 1517934,
+      "pages_to_break_even_vs_ocr_only_with_review": 444462
+    }
+  ],
+  "human_cost_sensitivity": [
+    {
+      "human_hourly_cost_usd": 10.0,
+      "genuity_cost_per_page_usd": 0.105754,
+      "full_page_vlm_cost_per_page_usd": 0.254127,
+      "savings_percent": 58.39
+    },
+    {
+      "human_hourly_cost_usd": 25.0,
+      "genuity_cost_per_page_usd": 0.262004,
+      "full_page_vlm_cost_per_page_usd": 0.629127,
+      "savings_percent": 58.35
+    },
+    {
+      "human_hourly_cost_usd": 45.0,
+      "genuity_cost_per_page_usd": 0.470337,
+      "full_page_vlm_cost_per_page_usd": 1.129127,
+      "savings_percent": 58.35
+    },
+    {
+      "human_hourly_cost_usd": 75.0,
+      "genuity_cost_per_page_usd": 0.782837,
+      "full_page_vlm_cost_per_page_usd": 1.879127,
+      "savings_percent": 58.34
+    }
+  ],
+  "routing_sensitivity": [
+    {
+      "routed_regions_per_page": 0.01,
+      "selective_machine_cost_per_page_usd": 0.00152803,
+      "full_page_vlm_machine_cost_per_page_usd": 0.00412725,
+      "machine_cost_reduction_percent": 62.98
+    },
+    {
+      "routed_regions_per_page": 0.05,
+      "selective_machine_cost_per_page_usd": 0.00156013,
+      "full_page_vlm_machine_cost_per_page_usd": 0.00412725,
+      "machine_cost_reduction_percent": 62.2
+    },
+    {
+      "routed_regions_per_page": 0.1,
+      "selective_machine_cost_per_page_usd": 0.00160025,
+      "full_page_vlm_machine_cost_per_page_usd": 0.00412725,
+      "machine_cost_reduction_percent": 61.23
+    },
+    {
+      "routed_regions_per_page": 0.25,
+      "selective_machine_cost_per_page_usd": 0.00172063,
+      "full_page_vlm_machine_cost_per_page_usd": 0.00412725,
+      "machine_cost_reduction_percent": 58.31
+    },
+    {
+      "routed_regions_per_page": 1.0,
+      "selective_machine_cost_per_page_usd": 0.0023225,
+      "full_page_vlm_machine_cost_per_page_usd": 0.00412725,
+      "machine_cost_reduction_percent": 43.73
+    }
+  ],
+  "billion_dollar_threshold": {
+    "pages_for_1b_usd_savings_vs_full_page_vlm": 1517933627,
+    "pages_for_1b_usd_savings_vs_ocr_only_with_review": 444461614,
+    "interpretation": "These are portfolio-throughput thresholds under the stated demo assumptions, not a market-size forecast."
+  },
+  "external_market_price_anchors": [
+    {
+      "provider": "AWS Textract",
+      "service": "Detect Document Text",
+      "usd_per_page": 0.0015,
+      "scope": "OCR only, first 1 million pages in US West (Oregon)",
+      "source": "https://aws.amazon.com/textract/pricing/"
+    },
+    {
+      "provider": "AWS Textract",
+      "service": "Analyze Document Forms + Tables",
+      "usd_per_page": 0.065,
+      "scope": "Structure extraction, first 1 million pages in US West (Oregon)",
+      "source": "https://aws.amazon.com/textract/pricing/"
+    },
+    {
+      "provider": "Google Document AI",
+      "service": "Form Parser",
+      "usd_per_page": 0.03,
+      "scope": "Structure and entity extraction, first 1 million pages per month",
+      "source": "https://cloud.google.com/document-ai/pricing"
+    },
+    {
+      "provider": "Google Document AI",
+      "service": "Enterprise Document OCR",
+      "usd_per_page": 0.0015,
+      "scope": "OCR, first 5 million pages per month",
+      "source": "https://cloud.google.com/document-ai/pricing"
+    }
+  ],
+  "commercial_principle": "Price against measured avoided exception-handling cost, with a pilot holdout and shared audit metrics; do not price against unverified top-down market claims.",
+  "limitations": [
+    "Linear scale scenarios do not include volume discounts, infrastructure step costs, or integration cost.",
+    "Review-case rates come from the controlled packet and must be replaced with a client pilot distribution.",
+    "Error-avoidance, cycle-time, working-capital, and compliance value are intentionally excluded until measured."
+  ]
+}

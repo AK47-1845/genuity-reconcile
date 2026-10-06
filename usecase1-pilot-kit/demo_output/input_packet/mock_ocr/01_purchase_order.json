@@ -1,0 +1,119 @@
+{
+  "adapter": "existing_ocr_fixture_v1",
+  "page_count": 1,
+  "text": "PURCHASE ORDER\nPO NUMBER: PO-1001\nSUPPLIER: Apex Metals\nPART NUMBER: PN-70725\nMATERIAL: INCONEL alloy 725\nQUANTITY: 45 PCS\nUNIT PRICE: USD 125.00\nTOTAL: [blank]\nREVISION: 3",
+  "fields": [
+    {
+      "name": "po_number",
+      "value": "PO-1001",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "supplier",
+      "value": "Apex Metals",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "part_number",
+      "value": "PN-70725",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "material_grade",
+      "value": "INCONEL alloy 725",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "quantity",
+      "value": 45,
+      "unit": "pcs",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "line_items",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "unit_price",
+      "value": 125.0,
+      "unit": "USD",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "line_items",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "total_amount",
+      "value": null,
+      "unit": "USD",
+      "confidence": 0.0,
+      "page": 1,
+      "region": "totals",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "revision",
+      "value": 3,
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    }
+  ]
+}

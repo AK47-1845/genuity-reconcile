@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genuity-reconcile-usecase1"
+version = "1.1.0"
+description = "Evidence-first industrial document reconciliation proof and pilot kit"
+requires-python = ">=3.10"
+dependencies = []
+authors = [{ name = "Genuity IO" }]
+
+[project.scripts]
+genuity-reconcile = "genuity_reconcile.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "source"}
+packages = ["genuity_reconcile"]
+
+[tool.setuptools.data-files]
+"domain_packs" = ["domain_packs/industrial_material_packet.json"]
+"templates" = [
+  "templates/CLIENT_TRUTH_TEMPLATE.csv",
+  "templates/PILOT_SCORECARD_TEMPLATE.csv",
+  "templates/REVIEW_RESOLUTION_TEMPLATE.csv",
+  "templates/RELEASE_APPROVAL_TEMPLATE.json",
+  "templates/LTTS_WORKFLOW_SELECTION_TEMPLATE.csv",
+  "templates/LTTS_PILOT_TELEMETRY_TEMPLATE.csv",
+  "templates/CLIENT_ADAPTER_MAPPING_TEMPLATE.csv",
+]

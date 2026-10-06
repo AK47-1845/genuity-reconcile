@@ -1,0 +1,157 @@
+{
+  "scope": "sealed synthetic benchmark truth; not consumed by extraction or reconciliation",
+  "record_truth": {
+    "part_number": "PN-70725",
+    "po_total_amount": 5625.0,
+    "mechanical_tensile_mpa": 910.107,
+    "material_certificate_tensile_mpa": 910.0,
+    "certificate_boron": 0.0002,
+    "quantity_conflict": {
+      "purchase_order": 45,
+      "invoice": 44
+    },
+    "inspector_signoff": null
+  },
+  "critical_field_truth": [
+    {
+      "document_fragment": "01_PURCHASE",
+      "field_name": "po_number",
+      "expected": "PO-1001"
+    },
+    {
+      "document_fragment": "01_PURCHASE",
+      "field_name": "part_number",
+      "expected": "PN-70725"
+    },
+    {
+      "document_fragment": "01_PURCHASE",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725"
+    },
+    {
+      "document_fragment": "01_PURCHASE",
+      "field_name": "quantity",
+      "expected": 45
+    },
+    {
+      "document_fragment": "02_SUPPLIER",
+      "field_name": "po_number",
+      "expected": "PO-1001"
+    },
+    {
+      "document_fragment": "02_SUPPLIER",
+      "field_name": "part_number",
+      "expected": "PN-70725"
+    },
+    {
+      "document_fragment": "02_SUPPLIER",
+      "field_name": "quantity",
+      "expected": 44
+    },
+    {
+      "document_fragment": "03_BOM",
+      "field_name": "po_number",
+      "expected": "PO-1001"
+    },
+    {
+      "document_fragment": "03_BOM",
+      "field_name": "part_number",
+      "expected": "PN-70725"
+    },
+    {
+      "document_fragment": "03_BOM",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725"
+    },
+    {
+      "document_fragment": "04_MATERIAL_SPEC",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725"
+    },
+    {
+      "document_fragment": "05_MATERIAL_CERT",
+      "field_name": "heat_number",
+      "expected": "W3535"
+    },
+    {
+      "document_fragment": "05_MATERIAL_CERT",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725"
+    },
+    {
+      "document_fragment": "05_MATERIAL_CERT",
+      "field_name": "chemistry.Ni",
+      "expected": 58.1
+    },
+    {
+      "document_fragment": "05_MATERIAL_CERT",
+      "field_name": "chemistry.Cr",
+      "expected": 20.8
+    },
+    {
+      "document_fragment": "06_CERTIFICATE",
+      "field_name": "po_number",
+      "expected": "PO-1001"
+    },
+    {
+      "document_fragment": "06_CERTIFICATE",
+      "field_name": "heat_number",
+      "expected": "W3535"
+    },
+    {
+      "document_fragment": "07_LADLE",
+      "field_name": "heat_number",
+      "expected": "W3535"
+    },
+    {
+      "document_fragment": "07_LADLE",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725"
+    },
+    {
+      "document_fragment": "07_LADLE",
+      "field_name": "chemistry.Ni",
+      "expected": 58.14
+    },
+    {
+      "document_fragment": "07_LADLE",
+      "field_name": "chemistry.Cr",
+      "expected": 20.8
+    },
+    {
+      "document_fragment": "08_MECHANICAL",
+      "field_name": "heat_number",
+      "expected": "W3535"
+    },
+    {
+      "document_fragment": "08_MECHANICAL",
+      "field_name": "part_number",
+      "expected": "PN-70725"
+    },
+    {
+      "document_fragment": "08_MECHANICAL",
+      "field_name": "tensile_strength_mpa",
+      "expected": 910.107963
+    },
+    {
+      "document_fragment": "09_HARDNESS",
+      "field_name": "heat_number",
+      "expected": "W3535"
+    },
+    {
+      "document_fragment": "11_MATERIAL_SPEC",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725"
+    },
+    {
+      "document_fragment": "12_FINAL",
+      "field_name": "part_number",
+      "expected": "PN-70725"
+    },
+    {
+      "document_fragment": "12_FINAL",
+      "field_name": "heat_number",
+      "expected": "W3535"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "adapter": "existing_ocr_fixture_v1",
+  "page_count": 1,
+  "text": "MATERIAL SPECIFICATION\nSPECIFICATION NUMBER: SPEC-725\nMATERIAL: INCONEL 725\nREVISION: 8\nCHEMISTRY TABLE: Cr 19.0-21.0, Ni >=55.0, Mo 7.0-9.5",
+  "fields": [
+    {
+      "name": "specification_number",
+      "value": "SPEC-725",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "material_grade",
+      "value": "INCONEL 725",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "revision",
+      "value": 8,
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "limit.Cr.min",
+      "value": 19.0,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "limit.Cr.max",
+      "value": 21.0,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "limit.Ni.min",
+      "value": 55.0,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "limit.Mo.min",
+      "value": 7.0,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "limit.Mo.max",
+      "value": 9.5,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    }
+  ]
+}

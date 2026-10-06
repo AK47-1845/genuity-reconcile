@@ -1,0 +1,20 @@
+{
+  "pages_processed": 12,
+  "fields_processed": 81,
+  "cache_hits": 1,
+  "ocr_calls": 0,
+  "ocr_result_reads": 12,
+  "rule_evaluations": 266,
+  "local_model_calls": 0,
+  "external_model_calls": 1,
+  "model_cache_hits": 0,
+  "input_tokens": 350,
+  "output_tokens": 120,
+  "human_review_cases": 5,
+  "automatically_accepted_fields": 77,
+  "verified_fields": 77,
+  "unresolved_fields": 1,
+  "processing_time_seconds": 0.024981,
+  "deterministic_documents": 10,
+  "external_regions_routed": 1
+}

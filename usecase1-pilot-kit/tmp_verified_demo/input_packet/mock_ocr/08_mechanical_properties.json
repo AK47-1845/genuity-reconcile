@@ -1,0 +1,77 @@
+{
+  "adapter": "existing_ocr_fixture_v1",
+  "page_count": 1,
+  "text": "MECHANICAL PROPERTIES\nHEAT NUMBER: W3535\nPART NUMBER: PN-70725\nTENSILE STRENGTH: 132000 MPa\nYIELD STRENGTH: 126000 PSI\nELONGATION: 24 percent",
+  "fields": [
+    {
+      "name": "heat_number",
+      "value": "W3535",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "part_number",
+      "value": "PN-70725",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "tensile_strength_mpa",
+      "value": 132000.0,
+      "unit": "MPa",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "mechanical_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "yield_strength_psi",
+      "value": 126000.0,
+      "unit": "psi",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "mechanical_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "elongation_percent",
+      "value": 24.0,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "mechanical_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    }
+  ]
+}

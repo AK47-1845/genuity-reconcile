@@ -1,0 +1,7 @@
+document_id,heat_number,property,value,unit,status,acceptance,safe_for_operational_use,analytics_only,evidence_ids
+05_MATERIAL_CERTIFICATE,W3535,tensile_strength_mpa,910.0,MPa,PROPOSED_VLM,REVIEW,False,False,"[""EV-05_MATERIAL_CERTIFICATE-013""]"
+08_MECHANICAL_PROPERTIES,W3535,tensile_strength_mpa,910.107963,MPa,RECOVERED_UNIT,ACCEPTED,True,False,"[""EV-08_MECHANICAL_PROPERTIES-003""]"
+08_MECHANICAL_PROPERTIES,W3535,yield_strength_psi,126000.0,psi,OBSERVED,ACCEPTED,True,False,"[""EV-08_MECHANICAL_PROPERTIES-004""]"
+08_MECHANICAL_PROPERTIES,W3535,elongation_percent,24.0,percent,OBSERVED,ACCEPTED,True,False,"[""EV-08_MECHANICAL_PROPERTIES-005""]"
+09_HARDNESS_TABLE,W3535,hardness_readings_hrc,"[38.6, null, 39.2, 39.0]",HRC,LOW_CONFIDENCE,REVIEW,False,False,"[""EV-09_HARDNESS_TABLE-002""]"
+09_HARDNESS_TABLE,W3535,hardness_row_9_col_2_hrc,39.0,HRC,ANALYTICS_ONLY,ANALYTICS_ONLY,False,True,"[""EV-09_HARDNESS_TABLE-002""]"

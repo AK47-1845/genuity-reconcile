@@ -1,0 +1,7 @@
+﻿document_id,field,status,reason
+DOC-05,hardness row 9 column 2,UNRESOLVED,Obscured value; no supporting document supplied
+DOC-08,W3535 01 boron,MISSING_WITH_CANDIDATE,Blank result; same-heat ladle row reports 0.0002
+DOC-08,W3535 27B boron,MISSING_WITH_CANDIDATE,Blank result; same-heat ladle row reports 0.0002
+DOC-06,part number,UNRESOLVED,Multiple handwritten character candidates
+DOC-06,dimension rows,REVIEW_REQUIRED,Handwritten measurements need field confirmation
+DOC-07,dense table rows,REVIEW_REQUIRED,Schema recovered; row transcription not accepted without stronger evidence

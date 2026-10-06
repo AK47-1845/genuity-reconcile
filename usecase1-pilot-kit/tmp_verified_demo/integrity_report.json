@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "checks_passed": 21,
+  "checks_total": 21,
+  "checks": [
+    {
+      "check_id": "unique_evidence_ids",
+      "result": "PASS",
+      "details": {
+        "total": 81,
+        "unique": 81
+      }
+    },
+    {
+      "check_id": "unique_document_ids",
+      "result": "PASS",
+      "details": {
+        "total": 12,
+        "unique": 12
+      }
+    },
+    {
+      "check_id": "unique_field_ids",
+      "result": "PASS",
+      "details": {
+        "total": 83,
+        "unique": 83
+      }
+    },
+    {
+      "check_id": "all_field_evidence_resolves",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "accepted_fields_have_evidence",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "accepted_fields_are_operationally_safe",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "analytics_imputations_not_accepted",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "accepted_reconstructions_have_rule_support",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "nonaccepted_fields_not_marked_safe",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "evidence_content_hashes_are_sha256",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "evidence_hash_matches_document",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "graph_evidence_resolves",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "exception_evidence_resolves",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "exceptions_are_blocked_from_operational_use",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "all_nonaccepted_fields_appear_once_in_exception_queue",
+      "result": "PASS",
+      "details": {
+        "missing": [],
+        "unexpected": [],
+        "duplicate_count": 0
+      }
+    },
+    {
+      "check_id": "exceptions_have_operational_routing_metadata",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "exception_dedupe_keys_are_unique",
+      "result": "PASS",
+      "details": {
+        "total": 6,
+        "unique": 6
+      }
+    },
+    {
+      "check_id": "duplicates_share_content_hash",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "unknown_document_fields_not_accepted",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "check_id": "accepted_reconstruction_method_permitted_by_domain_pack",
+      "result": "PASS",
+      "details": {
+        "disallowed_fields": [],
+        "permitted_methods": [
+          "alias_normalisation",
+          "cross_document_exact_join",
+          "deterministic_calculation",
+          "ocr_confusion_with_domain_candidate",
+          "quantity_times_unit_price",
+          "unit_constraint_recovery"
+        ]
+      }
+    },
+    {
+      "check_id": "analytics_imputation_purpose_permitted_by_domain_pack",
+      "result": "PASS",
+      "details": [
+        "analytics_only"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "pricing": {
+    "as_of": "2026-08-12",
+    "currency": "USD",
+    "external_model": "gpt-5.4-mini",
+    "official_source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+    "vision_tokenization_source": "https://developers.openai.com/api/docs/guides/images-vision#calculating-costs",
+    "input_usd_per_million_tokens": 0.75,
+    "output_usd_per_million_tokens": 4.5,
+    "local_compute_usd_per_page": 2e-05,
+    "ocr_baseline_usd_per_page_assumption": 0.0015,
+    "ocr_baseline_source": "https://aws.amazon.com/textract/pricing/",
+    "vision_tokenization": {
+      "patch_size_pixels": 32,
+      "high_detail_patch_budget": 1536,
+      "gpt_5_4_mini_multiplier": 1.62,
+      "full_page_width_pixels": 1800,
+      "full_page_height_pixels": 2400,
+      "full_page_post_resize_patches": 1452,
+      "full_page_prompt_text_tokens": 150,
+      "full_page_output_tokens": 500,
+      "crop_width_pixels": 576,
+      "crop_height_pixels": 264,
+      "crop_prompt_text_tokens": 87,
+      "crop_output_tokens": 120
+    },
+    "market_benchmarks": [
+      {
+        "provider": "AWS Textract",
+        "service": "Detect Document Text",
+        "usd_per_page": 0.0015,
+        "scope": "OCR only, first 1 million pages in US West (Oregon)",
+        "source": "https://aws.amazon.com/textract/pricing/"
+      },
+      {
+        "provider": "AWS Textract",
+        "service": "Analyze Document Forms + Tables",
+        "usd_per_page": 0.065,
+        "scope": "Structure extraction, first 1 million pages in US West (Oregon)",
+        "source": "https://aws.amazon.com/textract/pricing/"
+      },
+      {
+        "provider": "Google Document AI",
+        "service": "Form Parser",
+        "usd_per_page": 0.03,
+        "scope": "Structure and entity extraction, first 1 million pages per month",
+        "source": "https://cloud.google.com/document-ai/pricing"
+      },
+      {
+        "provider": "Google Document AI",
+        "service": "Enterprise Document OCR",
+        "usd_per_page": 0.0015,
+        "scope": "OCR, first 5 million pages per month",
+        "source": "https://cloud.google.com/document-ai/pricing"
+      }
+    ]
+  },
+  "token_calculation": {
+    "formula": "ceil(post_resize_patch_count * model_multiplier) + prompt_text_tokens",
+    "patch_size_pixels": 32,
+    "patch_budget": 1536,
+    "model_multiplier": 1.62,
+    "full_page": {
+      "dimensions_pixels": [
+        1800,
+        2400
+      ],
+      "post_resize_patch_count": 1452,
+      "image_tokens": 2353,
+      "prompt_text_tokens": 150,
+      "input_tokens": 2503,
+      "output_tokens": 500
+    },
+    "crop": {
+      "dimensions_pixels": [
+        576,
+        264
+      ],
+      "patch_count": 162,
+      "image_tokens": 263,
+      "prompt_text_tokens": 87,
+      "input_tokens": 350,
+      "output_tokens": 120
+    },
+    "source": "https://developers.openai.com/api/docs/guides/images-vision#calculating-costs"
+  },
+  "human_review_assumptions": {
+    "hourly_cost_usd": 45.0,
+    "minutes_per_case": 1.5
+  },
+  "actual_pipeline_usage": {
+    "external_call_is_simulated": false,
+    "external_model_calls": 0,
+    "model_cache_hits": 1,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "incremental_ocr_calls": 0,
+    "actual_incremental_external_api_cost_usd": 0.0,
+    "cold_cache_ceiling_external_api_cost_usd": 0.0008025,
+    "note": "Existing OCR JSON is the input; OCR baseline cost is included only in scenario comparisons. A content-cache hit has zero incremental model tokens in this run."
+  },
+  "comparison_basis": {
+    "shared_existing_ocr_cost": "Included in A, B, C, and E; D is a replacement full-page VLM path.",
+    "genuity_cache_treatment": "Scenario E charges every inspected crop as a cold-cache call, even when this run records a cache hit.",
+    "review_case_formulas": {
+      "A_OCR_only": "ceil(extracted_fields * 0.35)",
+      "B_OCR_plus_rules": "ceil(extracted_fields * 0.20)",
+      "C_OCR_reconciliation_validation": "ceil(extracted_fields * 0.10)",
+      "D_full_page_VLM": "max(pages, ceil(extracted_fields * 0.12))",
+      "E_Genuity_selective_routing": "actual blocking exception count from this packet"
+    },
+    "warning": "A-D review rates are planning assumptions, not measured vendor benchmarks."
+  },
+  "comparison": [
+    {
+      "scenario": "A_OCR_only",
+      "review_cases": 29,
+      "verified_fields_estimate": 53,
+      "local_or_ocr_compute_cost_usd": 0.018,
+      "external_api_cost_usd": 0.0,
+      "estimated_human_review_cost_usd": 32.625,
+      "estimated_total_batch_cost_usd": 32.643,
+      "cost_per_page_usd": 2.72025,
+      "cost_per_extracted_field_usd": 0.403,
+      "cost_per_verified_field_usd": 0.615906,
+      "cost_per_completed_record_usd": 32.643
+    },
+    {
+      "scenario": "B_OCR_plus_rules",
+      "review_cases": 17,
+      "verified_fields_estimate": 65,
+      "local_or_ocr_compute_cost_usd": 0.01824,
+      "external_api_cost_usd": 0.0,
+      "estimated_human_review_cost_usd": 19.125,
+      "estimated_total_batch_cost_usd": 19.14324,
+      "cost_per_page_usd": 1.59527,
+      "cost_per_extracted_field_usd": 0.236336,
+      "cost_per_verified_field_usd": 0.294511,
+      "cost_per_completed_record_usd": 19.14324
+    },
+    {
+      "scenario": "C_OCR_reconciliation_validation",
+      "review_cases": 9,
+      "verified_fields_estimate": 73,
+      "local_or_ocr_compute_cost_usd": 0.01824,
+      "external_api_cost_usd": 0.0,
+      "estimated_human_review_cost_usd": 10.125,
+      "estimated_total_batch_cost_usd": 10.14324,
+      "cost_per_page_usd": 0.84527,
+      "cost_per_extracted_field_usd": 0.125225,
+      "cost_per_verified_field_usd": 0.138948,
+      "cost_per_completed_record_usd": 10.14324
+    },
+    {
+      "scenario": "D_full_page_VLM",
+      "review_cases": 12,
+      "verified_fields_estimate": 77,
+      "local_or_ocr_compute_cost_usd": 0.0,
+      "external_api_cost_usd": 0.049527,
+      "estimated_human_review_cost_usd": 13.5,
+      "estimated_total_batch_cost_usd": 13.549527,
+      "cost_per_page_usd": 1.129127,
+      "cost_per_extracted_field_usd": 0.167278,
+      "cost_per_verified_field_usd": 0.175968,
+      "cost_per_completed_record_usd": 13.549527
+    },
+    {
+      "scenario": "E_Genuity_selective_routing",
+      "review_cases": 5,
+      "verified_fields_estimate": 77,
+      "local_or_ocr_compute_cost_usd": 0.01824,
+      "external_api_cost_usd": 0.000803,
+      "estimated_human_review_cost_usd": 5.625,
+      "estimated_total_batch_cost_usd": 5.644043,
+      "cost_per_page_usd": 0.470337,
+      "cost_per_extracted_field_usd": 0.06968,
+      "cost_per_verified_field_usd": 0.073299,
+      "cost_per_completed_record_usd": 5.644043
+    }
+  ],
+  "selective_vs_full_page_cost_per_verified_field_savings_percent": 58.35,
+  "savings_explanation": [
+    "Cached duplicate content is not parsed twice.",
+    "Deterministic parsing, joins, calculations, and validation precede any model route.",
+    "Only one uncertain crop is routed instead of every full page.",
+    "Evidence-backed auto-acceptance reduces estimated human review cases."
+  ],
+  "limitations": [
+    "Human-review rates and prompt/output token counts are explicit planning assumptions, not invoices.",
+    "Image-token units use the official patch formula and configured document/crop dimensions.",
+    "The demo VLM adapter is simulated; replace it with a client-approved adapter for production metering.",
+    "Model prices can change; update the dated domain-pack pricing block from the official source."
+  ]
+}

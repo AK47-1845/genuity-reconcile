@@ -1,0 +1,127 @@
+{
+  "batch_id": "whatsapp_engineering_sample_2026-08-12",
+  "check_count": 11,
+  "passed": 11,
+  "failed": 0,
+  "checks": [
+    {
+      "check_id": "combined_Ni_Co",
+      "document": "DOC-01",
+      "result": "PASS",
+      "explanation": "Reported Ni+Co agrees after document-level rounding.",
+      "details": {
+        "calculated": 58.14,
+        "reported": 58.1
+      }
+    },
+    {
+      "check_id": "combined_Nb_Ta",
+      "document": "DOC-01",
+      "result": "PASS",
+      "explanation": "Reported Nb+Ta agrees after document-level rounding.",
+      "details": {
+        "calculated": 3.4232,
+        "reported": 3.42
+      }
+    },
+    {
+      "check_id": "product_vs_ladle_1",
+      "document": "DOC-04",
+      "result": "PASS",
+      "explanation": "Product analysis remains close to the displayed ladle analysis for all shared fields.",
+      "details": {
+        "largest_absolute_difference": 0.029999999999999916,
+        "element": "Cr"
+      }
+    },
+    {
+      "check_id": "product_vs_ladle_2",
+      "document": "DOC-04",
+      "result": "PASS",
+      "explanation": "Product analysis remains close to the displayed ladle analysis for all shared fields.",
+      "details": {
+        "largest_absolute_difference": 0.019999999999999907,
+        "element": "Cr"
+      }
+    },
+    {
+      "check_id": "hardness_table_completeness",
+      "document": "DOC-05",
+      "result": "PASS",
+      "explanation": "95 of 96 visible table cells were structured; the obscured cell remains unresolved.",
+      "details": {
+        "captured": 95,
+        "expected": 96,
+        "minimum": 36.2,
+        "maximum": 40.3,
+        "mean": 38.655
+      }
+    },
+    {
+      "check_id": "inspection_quantity_reconciliation",
+      "document": "DOC-06",
+      "result": "PASS",
+      "explanation": "Inspected quantity equals accepted plus rejected quantity.",
+      "details": {
+        "inspected": 3,
+        "accepted": 3,
+        "rejected": 0
+      }
+    },
+    {
+      "check_id": "chemistry_spec_W3535_Ladle",
+      "document": "DOC-08",
+      "result": "PASS",
+      "explanation": "All displayed result values with an explicit displayed limit are within range.",
+      "details": {
+        "violations": []
+      }
+    },
+    {
+      "check_id": "chemistry_spec_W3535_01",
+      "document": "DOC-08",
+      "result": "PASS",
+      "explanation": "All displayed result values with an explicit displayed limit are within range.",
+      "details": {
+        "violations": []
+      }
+    },
+    {
+      "check_id": "chemistry_spec_W3535_27B",
+      "document": "DOC-08",
+      "result": "PASS",
+      "explanation": "All displayed result values with an explicit displayed limit are within range.",
+      "details": {
+        "violations": []
+      }
+    },
+    {
+      "check_id": "mechanical_sanity_SN_1A",
+      "document": "DOC-09",
+      "result": "PASS",
+      "explanation": "Yield is not above tensile strength and percentage fields are physically bounded.",
+      "details": {
+        "sample": "SN 1A",
+        "tensile_psi": 133200,
+        "yield_0_2_psi": 118000,
+        "yield_0_6_psi": 118000,
+        "elongation_percent": 22.4,
+        "reduction_percent": 70.0
+      }
+    },
+    {
+      "check_id": "mechanical_sanity_SN_2B",
+      "document": "DOC-09",
+      "result": "PASS",
+      "explanation": "Yield is not above tensile strength and percentage fields are physically bounded.",
+      "details": {
+        "sample": "SN 2B",
+        "tensile_psi": 132300,
+        "yield_0_2_psi": 116500,
+        "yield_0_6_psi": 116500,
+        "elongation_percent": 21.8,
+        "reduction_percent": 68.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "adapter": "existing_ocr_fixture_v1",
+  "page_count": 1,
+  "text": "CHEMISTRY TABLE - LADLE ANALYSIS\nHEAT NUMBER: W3535\nMATERIAL: INCONEL 725\nC 0.004, Ni 58.14, Cr 20.80, Mo 8.05, Nb 3.42, Ta 0.0032, B 0.0002",
+  "fields": [
+    {
+      "name": "heat_number",
+      "value": "W3535",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "material_grade",
+      "value": "INCONEL 725",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.C",
+      "value": 0.004,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "ladle_analysis",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Ni",
+      "value": 58.14,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "ladle_analysis",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Cr",
+      "value": 20.8,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "ladle_analysis",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Mo",
+      "value": 8.05,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "ladle_analysis",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Nb",
+      "value": 3.42,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "ladle_analysis",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Ta",
+      "value": 0.0032,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "ladle_analysis",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.B",
+      "value": 0.0002,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "ladle_analysis",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    }
+  ]
+}

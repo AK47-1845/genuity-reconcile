@@ -1,0 +1,399 @@
+{
+  "fixture_ground_truth_scope": "Controlled synthetic packet; metrics are demonstration evidence, not field performance claims.",
+  "fixture_ground_truth_available": true,
+  "checks": [
+    {
+      "check_id": "ocr_recovery",
+      "result": "PASS",
+      "expected": "PN-70725",
+      "actual": "PN-70725",
+      "critical": true
+    },
+    {
+      "check_id": "cross_document_recovery",
+      "result": "PASS",
+      "expected": "PN-70725",
+      "actual": "PN-70725",
+      "critical": true
+    },
+    {
+      "check_id": "deterministic_total",
+      "result": "PASS",
+      "expected": 5625.0,
+      "actual": 5625.0,
+      "critical": true
+    },
+    {
+      "check_id": "unit_recovery",
+      "result": "PASS",
+      "expected": 910.107,
+      "actual": 910.107963,
+      "critical": true
+    },
+    {
+      "check_id": "conflict_visible",
+      "result": "PASS",
+      "expected": "CONFLICT",
+      "actual": "CONFLICT",
+      "critical": true
+    },
+    {
+      "check_id": "unknowable_abstained",
+      "result": "PASS",
+      "expected": null,
+      "actual": null,
+      "critical": true
+    }
+  ],
+  "checks_passed": 6,
+  "checks_total": 6,
+  "critical_field_benchmark": [
+    {
+      "document_fragment": "01_PURCHASE",
+      "field_name": "po_number",
+      "expected": "PO-1001",
+      "actual": "PO-1001",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-01_PURCHASE_ORDER-001"
+      ]
+    },
+    {
+      "document_fragment": "01_PURCHASE",
+      "field_name": "part_number",
+      "expected": "PN-70725",
+      "actual": "PN-70725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-01_PURCHASE_ORDER-003"
+      ]
+    },
+    {
+      "document_fragment": "01_PURCHASE",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725",
+      "actual": "INCONEL 725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-01_PURCHASE_ORDER-004"
+      ]
+    },
+    {
+      "document_fragment": "01_PURCHASE",
+      "field_name": "quantity",
+      "expected": 45,
+      "actual": 45,
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-01_PURCHASE_ORDER-005"
+      ]
+    },
+    {
+      "document_fragment": "02_SUPPLIER",
+      "field_name": "po_number",
+      "expected": "PO-1001",
+      "actual": "PO-1001",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-02_SUPPLIER_INVOICE-002"
+      ]
+    },
+    {
+      "document_fragment": "02_SUPPLIER",
+      "field_name": "part_number",
+      "expected": "PN-70725",
+      "actual": "PN-70725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-02_SUPPLIER_INVOICE-004",
+        "EV-01_PURCHASE_ORDER-003"
+      ]
+    },
+    {
+      "document_fragment": "02_SUPPLIER",
+      "field_name": "quantity",
+      "expected": 44,
+      "actual": 44,
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-02_SUPPLIER_INVOICE-005"
+      ]
+    },
+    {
+      "document_fragment": "03_BOM",
+      "field_name": "po_number",
+      "expected": "PO-1001",
+      "actual": "PO-1001",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-03_BOM_REVISION_3-002"
+      ]
+    },
+    {
+      "document_fragment": "03_BOM",
+      "field_name": "part_number",
+      "expected": "PN-70725",
+      "actual": "PN-70725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-03_BOM_REVISION_3-003"
+      ]
+    },
+    {
+      "document_fragment": "03_BOM",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725",
+      "actual": "INCONEL 725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-03_BOM_REVISION_3-004"
+      ]
+    },
+    {
+      "document_fragment": "04_MATERIAL_SPEC",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725",
+      "actual": "INCONEL 725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-04_MATERIAL_SPEC_REVISION_9-002"
+      ]
+    },
+    {
+      "document_fragment": "05_MATERIAL_CERT",
+      "field_name": "heat_number",
+      "expected": "W3535",
+      "actual": "W3535",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-05_MATERIAL_CERTIFICATE-002"
+      ]
+    },
+    {
+      "document_fragment": "05_MATERIAL_CERT",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725",
+      "actual": "INCONEL 725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-05_MATERIAL_CERTIFICATE-003"
+      ]
+    },
+    {
+      "document_fragment": "05_MATERIAL_CERT",
+      "field_name": "chemistry.Ni",
+      "expected": 58.1,
+      "actual": 58.1,
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-05_MATERIAL_CERTIFICATE-006"
+      ]
+    },
+    {
+      "document_fragment": "05_MATERIAL_CERT",
+      "field_name": "chemistry.Cr",
+      "expected": 20.8,
+      "actual": 20.8,
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-05_MATERIAL_CERTIFICATE-008"
+      ]
+    },
+    {
+      "document_fragment": "06_CERTIFICATE",
+      "field_name": "po_number",
+      "expected": "PO-1001",
+      "actual": "PO-1001",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-06_CERTIFICATE_OF_CONFORMANCE-002"
+      ]
+    },
+    {
+      "document_fragment": "06_CERTIFICATE",
+      "field_name": "heat_number",
+      "expected": "W3535",
+      "actual": "W3535",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-06_CERTIFICATE_OF_CONFORMANCE-004"
+      ]
+    },
+    {
+      "document_fragment": "07_LADLE",
+      "field_name": "heat_number",
+      "expected": "W3535",
+      "actual": "W3535",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-07_LADLE_CHEMISTRY-001"
+      ]
+    },
+    {
+      "document_fragment": "07_LADLE",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725",
+      "actual": "INCONEL 725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-07_LADLE_CHEMISTRY-002"
+      ]
+    },
+    {
+      "document_fragment": "07_LADLE",
+      "field_name": "chemistry.Ni",
+      "expected": 58.14,
+      "actual": 58.14,
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-07_LADLE_CHEMISTRY-004"
+      ]
+    },
+    {
+      "document_fragment": "07_LADLE",
+      "field_name": "chemistry.Cr",
+      "expected": 20.8,
+      "actual": 20.8,
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-07_LADLE_CHEMISTRY-005"
+      ]
+    },
+    {
+      "document_fragment": "08_MECHANICAL",
+      "field_name": "heat_number",
+      "expected": "W3535",
+      "actual": "W3535",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-08_MECHANICAL_PROPERTIES-001"
+      ]
+    },
+    {
+      "document_fragment": "08_MECHANICAL",
+      "field_name": "part_number",
+      "expected": "PN-70725",
+      "actual": "PN-70725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-08_MECHANICAL_PROPERTIES-002"
+      ]
+    },
+    {
+      "document_fragment": "08_MECHANICAL",
+      "field_name": "tensile_strength_mpa",
+      "expected": 910.107963,
+      "actual": 910.107963,
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-08_MECHANICAL_PROPERTIES-003"
+      ]
+    },
+    {
+      "document_fragment": "09_HARDNESS",
+      "field_name": "heat_number",
+      "expected": "W3535",
+      "actual": "W3535",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-09_HARDNESS_TABLE-001"
+      ]
+    },
+    {
+      "document_fragment": "11_MATERIAL_SPEC",
+      "field_name": "material_grade",
+      "expected": "INCONEL 725",
+      "actual": "INCONEL 725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-11_MATERIAL_SPEC_OLD_REVISION-002"
+      ]
+    },
+    {
+      "document_fragment": "12_FINAL",
+      "field_name": "part_number",
+      "expected": "PN-70725",
+      "actual": "PN-70725",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-12_FINAL_INSPECTION-001"
+      ]
+    },
+    {
+      "document_fragment": "12_FINAL",
+      "field_name": "heat_number",
+      "expected": "W3535",
+      "actual": "W3535",
+      "acceptance": "ACCEPTED",
+      "correct": true,
+      "accepted_correct": true,
+      "evidence_ids": [
+        "EV-12_FINAL_INSPECTION-002"
+      ]
+    }
+  ],
+  "critical_fields_evaluated": 28,
+  "critical_fields_accepted": 28,
+  "critical_fields_correctly_accepted": 28,
+  "critical_field_precision": 1.0,
+  "critical_field_automatic_coverage": 1.0,
+  "automatic_acceptance_evidence_coverage": 1.0,
+  "unsupported_critical_auto_fills": [],
+  "synthetic_values_represented_as_observed_facts": 0,
+  "silent_conflict_resolutions": 0,
+  "benchmark_leakage_control": "ground_truth.json is outside mock_ocr and is not read by the OCR adapter or reconciliation stages"
+}

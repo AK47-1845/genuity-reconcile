@@ -1,0 +1,14 @@
+{
+  "candidate": 910.0,
+  "unit": "MPa",
+  "confidence": 0.91,
+  "model": "gpt-5.4-mini (simulated adapter)",
+  "scope": "tensile_strength_mpa",
+  "note": "Only the obscured mechanical-table crop was routed; candidate is not auto-accepted.",
+  "cache_hit": false,
+  "cache_key": "f4027a790f1ac9720e6138c9b8bb1d8a9e4d534b846015ac70325af5fb8c1c87",
+  "document_content_hash": "441f9bb547d141dcc2c138e92159f2d8063c823b62d67a92b2aa7a719d271c44",
+  "field_name": "tensile_strength_mpa",
+  "cache_schema_version": "1.0.0",
+  "integrity_sha256": "75b4f7326b820d4752bfcf822a39583529fc1636b565ec468c7195c54bb7a4b5"
+}

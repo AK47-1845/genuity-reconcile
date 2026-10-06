@@ -1,0 +1,77 @@
+{
+  "adapter": "existing_ocr_fixture_v1",
+  "page_count": 1,
+  "text": "CERTIFICATE OF CONFORMANCE\nCOC NUMBER: COC-77\nPO NUMBER: PO-1001\nCERTIFICATE NUMBER: MTR-900\nHEAT NUMBER: W3535\nSUPPLIER: Apex Metals\nWe certify that the supplied material conforms to PO-1001 and SPEC-725.",
+  "fields": [
+    {
+      "name": "coc_number",
+      "value": "COC-77",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "po_number",
+      "value": "PO-1001",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "certificate_number",
+      "value": "MTR-900",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "heat_number",
+      "value": "W3535",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "supplier",
+      "value": "Apex Metals",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    }
+  ]
+}

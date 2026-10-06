@@ -1,0 +1,189 @@
+{
+  "adapter": "existing_ocr_fixture_v1",
+  "page_count": 1,
+  "text": "MATERIAL TEST CERTIFICATE\nCERTIFICATE NUMBER: MTR-900\nHEAT NUMBER: W3535\nMATERIAL: INCONEL 725\nSUPPLIER: Apex Metals\nCHEMISTRY TABLE: C 0.004, Ni 58.10, Co 0.04, Cr 20.80, Mo 8.05, Nb 3.42, Ta 0.0032, B [blank]\nTENSILE TEST: [obscured stamp over value]",
+  "fields": [
+    {
+      "name": "certificate_number",
+      "value": "MTR-900",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "heat_number",
+      "value": "W3535",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "material_grade",
+      "value": "INCONEL 725",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "supplier",
+      "value": "Apex Metals",
+      "unit": null,
+      "confidence": 0.99,
+      "page": 1,
+      "region": "header",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.C",
+      "value": 0.004,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Ni",
+      "value": 58.1,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Co",
+      "value": 0.04,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Cr",
+      "value": 20.8,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Mo",
+      "value": 8.05,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Nb",
+      "value": 3.42,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.Ta",
+      "value": 0.0032,
+      "unit": "percent",
+      "confidence": 0.99,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "chemistry.B",
+      "value": null,
+      "unit": "percent",
+      "confidence": 0.0,
+      "page": 1,
+      "region": "chemistry_table",
+      "bbox": [
+        0.08,
+        0.08,
+        0.92,
+        0.16
+      ]
+    },
+    {
+      "name": "tensile_strength_mpa",
+      "value": null,
+      "unit": "MPa",
+      "confidence": 0.0,
+      "page": 1,
+      "region": "mechanical_table_crop_x430_y690_w260_h90",
+      "bbox": [
+        0.52,
+        0.65,
+        0.84,
+        0.76
+      ]
+    }
+  ]
+}

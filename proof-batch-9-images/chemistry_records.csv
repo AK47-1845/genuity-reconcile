@@ -1,0 +1,100 @@
+﻿document_id,sample,element,value,unit,status,source
+DOC-01,reported analysis,C,0.004,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Mn,0.07,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Fe,7.7,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,S,0.001,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Si,0.04,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Cu,0.04,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Ni,58.1,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Cr,20.8,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Al,0.23,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Ti,1.54,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Mg,0.001,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Co,0.04,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Mo,8.05,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Nb,3.42,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Ta,0.0032,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,Ca,0.0013,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-01,reported analysis,P,0.001,percent,RECOVERED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.02 (1).jpeg
+DOC-04,ladle,C,0.39,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,Mn,0.8,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,S,0.002,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,P,0.009,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,Si,0.24,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,Ni,0.07,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,Cr,0.92,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,Mo,0.2,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,Cu,0.17,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,Al,0.02,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,Nb,0.002,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,Ti,0.001,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,V,0.015,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,ladle,H_ppm,<2.0,ppm,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,C,0.38,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,Mn,0.81,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,S,0.001,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,P,0.01,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,Si,0.23,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,Ni,0.07,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,Cr,0.95,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,Mo,0.19,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,Cu,0.18,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,Al,0.023,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,Nb,0.006,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,Ti,0.002,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_1,V,0.017,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,C,0.39,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,Mn,0.8,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,S,0.002,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,P,0.01,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,Si,0.23,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,Ni,0.07,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,Cr,0.94,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,Mo,0.19,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,Cu,0.18,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,Al,0.022,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,Nb,0.004,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,Ti,0.002,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-04,product_2,V,0.016,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.51.01.jpeg
+DOC-08,W3535 Ladle,C,0.41,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,Mn,0.98,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,P,0.007,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,S,0.001,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,Si,0.25,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,Cr,1.08,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,Ni,0.16,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,Mo,0.23,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,Cu,0.19,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,Al,0.029,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,V,0.026,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,B,0.0002,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,Nb,0.002,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 Ladle,Ti,0.004,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,C,0.41,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,Mn,0.96,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,P,0.007,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,S,0.001,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,Si,0.24,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,Cr,1.07,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,Ni,0.16,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,Mo,0.22,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,Cu,0.2,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,Al,0.027,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,V,0.024,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,B,,percent,UNRESOLVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,Nb,0.002,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 01,Ti,0.003,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,C,0.42,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,Mn,0.97,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,P,0.008,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,S,0.001,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,Si,0.25,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,Cr,1.08,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,Ni,0.16,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,Mo,0.24,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,Cu,0.19,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,Al,0.027,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,V,0.025,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,B,,percent,UNRESOLVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,Nb,0.002,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg
+DOC-08,W3535 27B,Ti,0.004,percent,OBSERVED,C:/Users/k18ka/Downloads/WhatsApp Image 2026-08-12 at 13.50.58 (1).jpeg

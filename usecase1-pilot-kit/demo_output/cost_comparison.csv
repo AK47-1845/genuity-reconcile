@@ -1,0 +1,6 @@
+scenario,review_cases,verified_fields_estimate,local_or_ocr_compute_cost_usd,external_api_cost_usd,estimated_human_review_cost_usd,estimated_total_batch_cost_usd,cost_per_page_usd,cost_per_extracted_field_usd,cost_per_verified_field_usd,cost_per_completed_record_usd
+A_OCR_only,29,53,0.018,0.0,32.625,32.643,2.72025,0.403,0.615906,32.643
+B_OCR_plus_rules,17,65,0.01824,0.0,19.125,19.14324,1.59527,0.236336,0.294511,19.14324
+C_OCR_reconciliation_validation,9,73,0.01824,0.0,10.125,10.14324,0.84527,0.125225,0.138948,10.14324
+D_full_page_VLM,12,77,0.0,0.049527,13.5,13.549527,1.129127,0.167278,0.175968,13.549527
+E_Genuity_selective_routing,5,77,0.01824,0.000803,5.625,5.644043,0.470337,0.06968,0.073299,5.644043

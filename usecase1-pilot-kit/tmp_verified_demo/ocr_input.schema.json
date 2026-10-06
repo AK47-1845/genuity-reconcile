@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://genuity.io/contracts/existing-ocr-v1.schema.json",
+  "title": "Genuity existing OCR adapter input",
+  "type": "object",
+  "required": [
+    "page_count",
+    "text",
+    "fields"
+  ],
+  "properties": {
+    "adapter": {
+      "type": "string"
+    },
+    "page_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "text": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "value",
+          "confidence",
+          "page",
+          "region"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {},
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "region": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bbox": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

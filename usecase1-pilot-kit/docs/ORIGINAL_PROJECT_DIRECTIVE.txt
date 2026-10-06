@@ -1,0 +1,399 @@
+======================================================================
+FINAL EXECUTIVE DIRECTIVE — READ THIS BEFORE EVERYTHING ELSE
+======================================================================
+
+I am assigning you responsibility for executing this project autonomously at the highest engineering level possible.
+
+You will not receive additional clarification, confidential documents or supervision during this assignment. Make safe, reasonable assumptions, document them and continue. Do not stop to ask questions unless execution is genuinely impossible.
+
+This directive overrides lower-priority requirements elsewhere in the task.
+
+======================================================================
+1. THE REAL BUSINESS OBJECTIVE
+======================================================================
+
+The objective is not to demonstrate OCR, build an impressive architecture diagram or create another generic document-processing library.
+
+The objective is:
+
+“Prove that Genuity can convert large collections of messy, incomplete industrial documents into trustworthy, evidence-linked, system-ready data at a dramatically lower total cost than manual processing or sending every page to an expensive VLM.”
+
+A service company such as LTTS already possesses:
+
+- OCR technology
+- Document-extraction pipelines
+- VLM access
+- Data engineers
+- Quality-checking processes
+- Client-specific templates
+- Possibly patented OCR components
+
+Therefore, do not compete with their OCR.
+
+Genuity must plug into their existing extraction stack and solve what remains:
+
+- Uncertain fields
+- Missing values
+- Broken tables
+- Inconsistent formats
+- Cross-document relationships
+- Conflicting records
+- Validation
+- Evidence
+- Expensive exception handling
+- Repeated manual data preparation
+
+The compelling proposition is:
+
+“Keep your OCR and existing VLMs. Genuity transforms their incomplete output into validated, connected records and resolves supported exceptions using deterministic logic, cross-document evidence and inexpensive local processing.”
+
+======================================================================
+2. DEFINITION OF A SUCCESSFUL ‘WOW’ DEMONSTRATION
+======================================================================
+
+The final demonstration must show this complete journey through one command:
+
+Raw mixed documents or generated document fixtures
+→ Existing/mock OCR output
+→ Document classification
+→ Field and table extraction
+→ Canonical schema
+→ Normalisation
+→ Cross-document linking
+→ Missing-data analysis
+→ Evidence-backed reconstruction
+→ Conflict detection
+→ Validation
+→ Exception queue
+→ Structured CSV/JSON output
+→ Evidence-linked graph
+→ Accuracy and cost report
+
+The demonstration must contain:
+
+1. A value that OCR misreads and Genuity correctly recovers.
+2. A value missing from one document but found in another related document.
+3. A value derived through a deterministic calculation.
+4. A missing value for which Genuity produces a proposal but does not automatically accept it.
+5. A statistical imputation marked as analytics-only.
+6. A conflict between two documents.
+7. A genuinely unknowable field that remains UNRESOLVED.
+8. A document that is processed entirely without an LLM or VLM.
+9. One difficult region that can optionally be routed to a VLM adapter.
+10. A final cost comparison.
+
+If the demo does not visibly prove those ten behaviours, the assignment is incomplete.
+
+======================================================================
+3. PRIORITIES
+======================================================================
+
+P0 — MUST WORK
+
+Spend most of the assignment here:
+
+- Repository understanding
+- Trusted field and evidence model
+- Cheap extraction-adapter pipeline
+- Domain-pack configuration
+- Normalisation
+- Cross-document entity linking
+- Missing-data decision hierarchy
+- Validation
+- Conflict handling
+- Exception queue
+- Cost tracking
+- Material-certificate demo
+- Procurement-document-chain demo
+- Tests
+- One-command demonstration
+- Metrics and cost comparison
+
+P1 — IMPLEMENT IF IT SUPPORTS THE DEMO
+
+- Lightweight knowledge graph
+- Synthetic document fixtures
+- Template clustering
+- Additional exporters
+- Research and licence report
+- Documentation
+
+P2 — DESIGN ONLY, UNLESS P0 IS COMPLETE
+
+- User interface
+- Large-scale distributed processing
+- Multiple additional industries
+- Complex graph databases
+- Model training
+- Full CAD or engineering-drawing support
+- Advanced agent workflows
+
+Do not sacrifice a working P0 demonstration to create broad but empty architecture.
+
+======================================================================
+4. HARD ENGINEERING PRINCIPLES
+======================================================================
+
+The cheapest reliable method must always run first.
+
+Required processing order:
+
+1. Cached result
+2. Exact template or deterministic parser
+3. Existing OCR output
+4. Rules and normalisation
+5. Cross-document retrieval
+6. Domain constraints
+7. Small local model, if available
+8. Cropped-region VLM call, if explicitly permitted
+9. Human review
+10. UNRESOLVED
+
+Never send the complete document to a VLM when one uncertain region is sufficient.
+
+Never call a model again when an identical content hash has already been processed.
+
+Never use a generative model for a value that can be calculated or retrieved deterministically.
+
+Never automatically accept a field merely because a model is confident.
+
+======================================================================
+5. COST MUST BE A FIRST-CLASS OUTPUT
+======================================================================
+
+Implement cost accounting as part of the core pipeline.
+
+Track:
+
+- Pages processed
+- Fields processed
+- Cache hits
+- OCR calls
+- Rule evaluations
+- Local-model calls
+- External-model calls
+- Tokens, if applicable
+- Human-review cases
+- Processing time
+- Automatically accepted fields
+- Verified fields
+- Unresolved fields
+
+Calculate:
+
+cost_per_page
+cost_per_extracted_field
+cost_per_verified_field
+cost_per_completed_record
+estimated_human_review_cost
+estimated_total_batch_cost
+
+Use:
+
+cost_per_verified_field =
+    (local compute cost
+     + external API cost
+     + estimated human-review cost)
+    / verified accepted fields
+
+Make human hourly cost configurable.
+
+If internet access is available, use current official pricing for any external model baseline and record the date. Do not hard-code pricing permanently.
+
+Compare at least:
+
+A. OCR-only baseline
+B. OCR plus deterministic rules
+C. OCR plus reconciliation and validation
+D. Full-page VLM baseline or a clearly documented cost model
+E. Genuity’s selective routing pipeline
+
+The final report must explain where savings come from.
+
+======================================================================
+6. DEMONSTRATION TARGETS
+======================================================================
+
+Treat these as engineering targets, not claims to hide or manipulate:
+
+- 100% evidence coverage for automatically accepted fields
+- Zero unsupported critical-field auto-fills
+- Zero synthetic values represented as observed facts
+- Zero silent conflict resolution
+- External VLM routing below 10% of pages or uncertain regions in the generated demonstration
+- Materially lower cost per verified field than the full-page VLM baseline
+- Critical-field precision prioritised over automatic coverage
+- Every rejected or unresolved field visible in the exception output
+- Complete reproducibility from one command
+
+If a target is missed:
+
+- Report it honestly
+- Explain why
+- Identify the bottleneck
+- Do not modify the benchmark to hide the failure
+
+======================================================================
+7. SIMPLE SERVICE-COMPANY EXPERIENCE
+======================================================================
+
+A normal data engineer should be able to use the system without understanding its internal machine-learning details.
+
+Target experience:
+
+1. Install Genuity.
+2. Select or configure a domain pack.
+3. Point it at a document folder or OCR-result folder.
+4. Run one command.
+5. Receive:
+   - structured data,
+   - evidence,
+   - conflicts,
+   - unresolved fields,
+   - graph relationships,
+   - metrics,
+   - cost report.
+
+Prefer YAML, JSON or simple Python configuration for domain packs.
+
+A domain pack should make it easy to configure:
+
+- Document types
+- Fields
+- Aliases
+- Units
+- Join keys
+- Required fields
+- Rules
+- Source-authority order
+- Criticality
+- Permitted reconstruction methods
+- Permitted imputation purposes
+- Review thresholds
+
+Do not require the service-company engineer to retrain a large model for every new client.
+
+======================================================================
+8. THE MOST IMPORTANT DIFFERENTIATION
+======================================================================
+
+The core technical differentiator is not OCR.
+
+It is the combination of:
+
+- Cross-document evidence retrieval
+- Configurable domain knowledge
+- Candidate generation
+- Deterministic validation
+- Explicit uncertainty
+- Safe abstention
+- Provenance
+- Cost-aware routing
+- Reusable domain packs
+
+Every reconstructed value must answer:
+
+- What was the original extraction?
+- What candidate was selected?
+- Why was it selected?
+- Which documents support it?
+- Which rules passed?
+- Which alternatives were rejected?
+- Is it safe for operational use?
+- Is it only suitable for analytics?
+- Does it require human confirmation?
+
+======================================================================
+9. REQUIRED FINAL DEMO STORY
+======================================================================
+
+Build a generated, non-confidential industrial document packet containing:
+
+- Purchase order
+- Invoice
+- BoM
+- Specification
+- Material certificate
+- Certificate of conformance
+- Chemistry table
+- Mechanical-properties table
+
+The documents should share identifiers such as:
+
+- PO number
+- Part number
+- Supplier
+- Heat or lot number
+- Material grade
+
+Introduce controlled problems:
+
+- OCR character error
+- Missing part number
+- Missing chemistry value
+- Conflicting quantity
+- Incorrect unit
+- Duplicate document
+- Old revision
+- Obscured test value
+- Unknowable field
+
+Genuity must produce one connected record showing:
+
+PO
+→ Part
+→ BoM
+→ Specification
+→ Material certificate
+→ Heat/lot
+→ Test results
+
+The final demo should answer questions such as:
+
+- Which material certificate belongs to this PO?
+- Does the chemistry satisfy the displayed specification?
+- Which field was recovered from another document?
+- Which documents disagree?
+- Which values are synthetic?
+- Which values are still unresolved?
+- What did processing cost?
+- How many pages required expensive processing?
+
+======================================================================
+10. MANAGER EXPECTATION
+======================================================================
+
+I expect senior-level judgement.
+
+Do not merely follow the specification mechanically.
+
+If the repository already contains functionality, reuse it.
+
+If a proposed module does not improve the business objective, do not overbuild it.
+
+If a simpler deterministic approach works, use it.
+
+If a dependency is expensive, heavy, restrictive or unnecessary, avoid it.
+
+If an architectural idea cannot be demonstrated, clearly label it as future work.
+
+Your result will be reviewed on:
+
+1. Working end-to-end behaviour
+2. Correctness
+3. Safety around missing data
+4. Simplicity
+5. Integration with existing Genuity
+6. Cost advantage
+7. Evidence and auditability
+8. Quality of tests
+9. Reproducibility
+10. Honest reporting
+
+The goal is not to impress with complexity.
+
+The goal is to make a service-company engineering leader say:
+
+“We can plug this into our existing document pipeline, reduce expensive model calls and manual review, and begin delivering client data projects faster.”
+
+Now continue with the complete task specification below. Execute autonomously and do not stop at planning.

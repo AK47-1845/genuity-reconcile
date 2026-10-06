@@ -1,0 +1,91 @@
+[
+  {
+    "check_id": "revision-11_MATERIAL_SPEC_OLD_REVISION",
+    "result": "SUPERSEDED",
+    "document_id": "11_MATERIAL_SPEC_OLD_REVISION",
+    "rule": "latest_revision_wins_for_requirements",
+    "details": {
+      "specification": "SPEC-725",
+      "revision": 8,
+      "latest": 9
+    }
+  },
+  {
+    "check_id": "chemistry-Cr",
+    "result": "PASS",
+    "value": 20.8,
+    "bounds": {
+      "minimum": 19.0,
+      "maximum": 22.5
+    },
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-008",
+      "EV-04_MATERIAL_SPEC_REVISION_9-004",
+      "EV-04_MATERIAL_SPEC_REVISION_9-005"
+    ]
+  },
+  {
+    "check_id": "chemistry-Ni",
+    "result": "PASS",
+    "value": 58.1,
+    "bounds": {
+      "minimum": 55.0
+    },
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-006",
+      "EV-04_MATERIAL_SPEC_REVISION_9-006"
+    ]
+  },
+  {
+    "check_id": "chemistry-Mo",
+    "result": "PASS",
+    "value": 8.05,
+    "bounds": {
+      "minimum": 7.0,
+      "maximum": 9.5
+    },
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-009",
+      "EV-04_MATERIAL_SPEC_REVISION_9-007",
+      "EV-04_MATERIAL_SPEC_REVISION_9-008"
+    ]
+  },
+  {
+    "check_id": "derived-Ni-plus-Co",
+    "result": "PASS",
+    "value": 58.14,
+    "method": "deterministic_addition",
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-006",
+      "EV-05_MATERIAL_CERTIFICATE-007"
+    ]
+  },
+  {
+    "check_id": "chemistry-Nb-plus-Ta",
+    "result": "PASS",
+    "value": 3.4232,
+    "bounds": {
+      "minimum": 2.75,
+      "maximum": 4.0
+    },
+    "method": "deterministic_addition_then_range_check",
+    "evidence_ids": [
+      "EV-05_MATERIAL_CERTIFICATE-010",
+      "EV-05_MATERIAL_CERTIFICATE-011"
+    ]
+  },
+  {
+    "check_id": "mechanical-tensile",
+    "result": "PASS",
+    "value": 910.107963,
+    "bounds": {
+      "minimum": 827.0,
+      "maximum": 1034.0
+    },
+    "evidence_ids": [
+      "EV-08_MECHANICAL_PROPERTIES-003",
+      "EV-04_MATERIAL_SPEC_REVISION_9-012",
+      "EV-04_MATERIAL_SPEC_REVISION_9-013"
+    ]
+  }
+]
